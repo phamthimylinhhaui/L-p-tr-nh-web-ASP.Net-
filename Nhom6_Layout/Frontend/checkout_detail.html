@@ -1,0 +1,723 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from template.hasthemes.com/harmic/harmic/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Sep 2021 16:27:54 GMT -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vascara - Website bán giày của sinh viên nhóm 2 HAUI</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="wwwroot/assets/images/favicon.ico" />
+
+    <!-- CSS
+    ============================================ -->
+
+
+
+    <!-- Minify Version -->
+    <link rel="stylesheet" href="wwwroot/assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="wwwroot/assets/css/plugins/plugins.min.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="wwwroot/assets/css/style.min.css">
+
+
+    
+    <link href="wwwroot/js/custom/invoice.css" rel="stylesheet" />
+    <link href="wwwroot/js/custom/mainnnn.css" rel="stylesheet" />
+
+</head>
+
+<body style="background: #fff">
+   
+
+
+
+<div class="header-top border-bottom d-none d-md-block" style="padding: 8px 0px;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-8">
+                <div class="header-top-left">
+                    <ul class="dropdown-wrap text-matterhorn">
+                        <li style="margin-right: 50px;">
+                            <i class="pe-7s-map-marker"></i>
+                            Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội
+                        </li>
+                        <li>
+                            <i class="pe-7s-piggy"></i>
+                            <a> Freeship cho đơn hàng từ 500.000đ </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="header-top-right text-matterhorn">
+                    <p class="shipping mb-0">
+                        <i class="pe-7s-alarm"></i>
+                       
+                        Mở cửa và phục vụ khách hàng 24/24h
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header-middle py-5  header-sticky">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <div class="header-middle-wrap">
+                    <a href="index.html" class="header-logo">
+                        <img src="wwwroot/assets/images/logo/vascra.png" alt="Header Logo">
+                    </a>
+                    <div class="header-search-area d-none d-lg-block" style="width:630px">
+
+                        
+                        <div  class="header-searchbox">
+
+                            <input class="input-field" type="text" placeholder="Nhập sản phầm tìm kiếm"  id="keyword">
+                            <button class="btn btn-outline-whisper btn-primary-hover" type="submit"  onclick="onSearch()">
+                                <i class="pe-7s-search"></i>
+                            </button>
+                        </div>
+                        
+
+                       
+
+                    </div>
+                    <div class="header-right">
+                        <ul>
+                            <li class="dropdown d-none d-md-block">
+
+                                    <a href="login.html" class="btn btn-link dropdown-toggle ht-btn p-0">
+                                        <i class="pe-7s-users"> </i>
+                                        <span style=" color: #797676; padding-left: 7px; font-size: 16px; padding-top: 3px;">Đăng nhập </span>
+                                    </a>
+
+
+
+                            </li>
+
+                            <li class="d-block d-lg-none" style="padding-top:6px">
+                                <a href="#searchBar" class="search-btn toolbar-btn">
+                                    <i class="pe-7s-search"></i>
+                                </a>
+                            </li>
+                            <li class="minicart-wrap me-3 me-lg-0">
+
+                                <a title="Cartlist" href="checkout.html" class="minicart-btn ">
+                                    <i class="pe-7s-shopbag"></i>
+                                    <span  style="position: absolute; color: #e87474; left: 46px; font-weight: 600; top: -5px; font-size: 14px; ">Tổng:</span>
+                                    <sup id="hdk-count" class="quantity" > 0 vnđ</sup>
+
+                                </a>
+                                <p class="dieuchinhcsscart">
+                                    <small id="total-amount" style="font-weight:600">0</small>
+                                </p>
+
+
+
+                            </li>
+                            <li class="mobile-menu_wrap d-block d-lg-none">
+                                <a href="#mobileMenu" class="mobile-menu_btn toolbar-btn pl-0">
+                                    <i class="pe-7s-menu"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const onSearch = () => {
+        const keyword = document.getElementById("keyword").value;
+
+        window.location = `/Product/Search?keyword=${keyword}`;
+    }
+</script>
+
+
+    <!-- Start menu pc -->
+ <div class="main-header " style="border-top: 1px solid #f15c68; border-bottom: 1px solid #f15c68;">
+        <div class="container">
+            <div class="main-header_nav position-relative">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 d-none d-lg-block">
+                        <div class="main-menu">
+                            <nav class="main-nav">
+                                <ul style="justify-content:left">
+                                    <li class="drop-holder">
+                                        <a href="index.html">
+                                            <i class="pe-7s-home" style="font-size:20px"></i>
+
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="Category.html">Giày Cao gót</a></li>
+                                   
+
+                                     <li>
+                                        <a href="Category.html">Giày Sandals</a></li>
+                                   
+
+                                     <li>
+                                        <a href="Category.html">Giày Sneaker</a></li>
+                                   
+                                    
+                                    
+                                     <li>
+                                        <a href="Category.html">Giày Boots</a></li>
+                                   
+
+                                    <li>
+                                        <a href="Category.html">Giày da thật</a></li>
+
+                                   <li>
+                                        <a href="Category.html">Giày Lười</a></li>
+                                   
+                                    
+                                </ul> 
+                                
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End menu pc -->
+    <!-- Start menu mobile -->
+
+<style>
+    .header-right {
+        min-width: 0px;
+    }
+
+    .header-right > ul {
+        justify-content: space-between;
+    }
+    ul.dropdown-wrap.justify-content-center.text-silver {
+        background: #2b2828;
+        padding: 20px;
+    }
+
+    .dropdown-wrap li .ht-btn:after {
+        display: none;
+    }
+    .offcanvas-search_wrapper .harmic-offcanvas-body .offcanvas-search{
+        justify-content:flex-start;
+    }
+    .main-header.header-sticky.sticky {
+        top: 94px;
+    }
+
+</style>
+<div class="mobile-menu_wrapper" id="mobileMenu">
+    <div class="harmic-offcanvas-body">
+        <div class="inner-body">
+
+            <div class="harmic-offcanvas-top">
+                <a href="#" class="button-close"><i class="pe-7s-close"></i></a>
+            </div>
+
+            <div class="offcanvas-user-info text-center px-6 pb-5">
+               
+                <ul class="dropdown-wrap justify-content-center text-silver">
+                    
+                   
+                    <li class="dropdown dropup">
+                            <a class="btn btn-link  ht-btn p-0" href="login.html">
+                                <i class="pe-7s-users"></i>
+                                <span style=" color: #797676; padding-left: 7px; font-size: 16px; padding-top: 3px;">Đăng nhập </span>
+                            </a>
+
+
+
+
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="offcanvas-menu_area">
+                <nav class="offcanvas-navigation">
+                    <ul class="mobile-menu">
+                        <li class="menu-item-has-children">
+                            <a href="/">
+                                <i class="pe-7s-home" style="font-size:20px"></i>
+                                Home
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="mm-text">Giới thiệu</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                            <a href="#">
+                                <span class="mm-text">
+                                    Danh mục sản phẩm
+                                    <i class="pe-7s-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+
+                                    <li>
+                                        <a href="category.html">
+                                            
+                                            <span class="mm-text">Danh mục 1</span>
+
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="category.html">
+                                            
+                                            <span class="mm-text">Danh mục 2</span>
+
+                                        </a>
+                                    </li>
+
+                                     <li>
+                                        <a href="category.html">
+                                            
+                                            <span class="mm-text">Danh mục 3</span>
+
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="category.html">
+                                            
+                                            <span class="mm-text">Danh mục 4</span>
+
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="category.html">
+                                            
+                                            <span class="mm-text">Danh mục 5</span>
+
+                                        </a>
+                                    </li>
+                                    
+                                
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Khuyến mãi</a>
+                        </li>
+                        <li>
+                            <a href="#">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="#">Hình ảnh</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Liên hệ</a>
+                        </li>
+                        <li style="padding-left:70px">
+                            <a href="#" style="color:red; font-weight:bold">Hotline: 038.464.0190</a>
+                        </li>
+                       
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offcanvas-search_wrapper" id="searchBar">
+    <div class="harmic-offcanvas-body">
+        <div class="container h-100">
+            <div class="offcanvas-search">
+                <div class="harmic-offcanvas-top">
+                    <a href="#" class="button-close"><i class="pe-7s-close"></i></a>
+                </div>
+                <span class="searchbox-info">Nhập từ bạn muốn tìm và nhấn Enter</span>
+                
+                <div class="hm-searchbox">
+                    <input type="text" placeholder="Tìm kiếm.....">
+                    <button class="search-btn" type="submit"  onclick="onSearch()"><i class="pe-7s-search"></i></button>
+                </div>
+                
+
+                
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- End menu mobile -->
+
+
+
+<main class="main-content">
+
+    <div class="breadcrumb-area breadcrumb-height" data-bg-image="https://theme.hstatic.net/1000317997/1000499273/14/ms_banner_img1.jpg?v=198">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-item">
+                        <div class="main-breadcrum">
+                            <h2 class="breadcrumb-heading">Chi tiết đơn hàng</h2>
+                            <ul style="text-align:center">
+                                <li>
+                                    <a href="/">Trang chủ <i class="pe-7s-angle-right"></i></a>
+                                </li>
+                                <li> Chi tiết đơn hàng</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="inner-section invoice-part" style="margin-top:40px">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-6">
+                    <div class="account-card">
+                        <div class="account-title">
+                            <h4>Chi tiết đơn hàng</h4>
+                        </div>
+                        <div class="account-content">
+                            <ul class="invoice-details">
+                                <li>
+                                    <h6>Mã đơn</h6>
+                                    <p>#5</p>
+                                </li>
+                                <li>
+                                    <h6>Tổng số sản phẩm</h6>
+                                    <p>4 sản phẩm</p>
+                                </li>
+                                <li>
+                                    <h6>Ngày đặt</h6>
+                                    <p>10/4/2021 12:01:22 AM</p>
+                                </li>
+                                <li>
+                                    <h6>Địa chỉ giao hàng</h6>
+                                    <p>An L&#227;o</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="account-card">
+                        <div class="account-title">
+                            <h4>Chi tiết số tiền</h4>
+                        </div>
+                        <div class="account-content">
+                            <ul class="invoice-details">
+                                <li>
+                                    <h6>Tổng tiền</h6>
+                                    <p>310,500 vnđ</p>
+                                </li>
+                                <li>
+                                    <h6>Giảm giá</h6>
+                                    <p>0 vnđ</p>
+                                </li>
+                                <li>
+                                    <h6>Phương thức thanh toán</h6>
+                                    <p>Khi nhận hàng</p>
+                                </li>
+                                <li>
+                                    <h6>Thành tiền</h6>
+                                    <p>310,500 vnđ</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="table-scroll">
+                        <table class="table-list">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Mã SP</th>
+                                    <th scope="col">Ảnh</th>
+                                    <th scope="col">Tên</th>
+                                    <th scope="col">Giá</th>
+                                    <th scope="col">Số lượng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td class="table-serial">
+                                            <h6>
+                                                SP-20
+                                            </h6>
+                                        </td>
+                                        <td class="table-image">
+                                            <img src="https://www.vascara.com/uploads/cms_productmedia/2021/June/30/giay-sneaker-vien-chi-noi-thoi-trang-snk-0042-mau-trang-5__60485__1625071843-medium@2x.jpg?1" alt="product" />
+                                        </td>
+                                        <td class="table-name">
+                                            <h6>Sản phẩm 1</h6>
+                                        </td>
+                                        <td class="table-price">
+                                            <h6>70,500 vnđ</h6>
+                                        </td>
+                                        <td class="table-quantity">
+                                            <h6>1</h6>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-serial">
+                                            <h6>
+                                                SP-37
+                                            </h6>
+                                        </td>
+                                        <td class="table-image">
+                                            <img src="https://www.vascara.com/uploads/cms_productmedia/2021/June/30/giay-sneaker-vien-chi-noi-thoi-trang-snk-0042-mau-trang-5__60485__1625071843-medium@2x.jpg?1" alt="product" />
+                                        </td>
+                                        <td class="table-name">
+                                            <h6>Sản phẩm 2</h6>
+                                        </td>
+                                        <td class="table-price">
+                                            <h6>80,000 vnđ</h6>
+                                        </td>
+                                        <td class="table-quantity">
+                                            <h6>3</h6>
+                                        </td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center mt-5">
+                    <a class="checkout-proced btn btn-inline dieuchinhbg" href="/ ">Trở về trang chủ</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+    <script>
+        const removeLocalStorage = () => {
+            localStorage.removeItem("productIds");
+            localStorage.removeItem("amount");
+        }
+
+        removeLocalStorage();
+    </script>
+
+
+
+    <!-- Start footer -->
+    <!-- Begin Shipping Area -->
+    <div class="shipping-area " style="padding-bottom:100px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="shipping-item">
+                        <div class="shipping-img">
+                            <img src="https://cuahangdongho.vn/wp-content/uploads/2020/06/xe-tai.png" alt="Shipping Icon">
+                        </div>
+                        <div class="shipping-content">
+                            <h5 class="title">Miễn phí vận chuyển</h5>
+                            <p class="short-desc mb-0">Ưu đãi giao hàng tận nhà miễn phí</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-6 pt-md-0">
+                    <div class="shipping-item">
+                        <div class="shipping-img">
+                            <img src="https://cuahangdongho.vn/wp-content/uploads/2020/06/logo1.png" alt="Shipping Icon">
+                        </div>
+                        <div class="shipping-content">
+                            <h5 class="title">Hỗ trợ trực tuyến</h5>
+                            <p class="short-desc mb-0">Hỗ trợ trực tuyến 24/7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-6 pt-lg-0">
+                    <div class="shipping-item">
+                        <div class="shipping-img">
+                            <img src="https://cuahangdongho.vn/wp-content/uploads/2020/06/the-besst.png" alt="Shipping Icon">
+                        </div>
+                        <div class="shipping-content">
+                            <h5 class="title">Bảo đảm chất lượng</h5>
+                            <p class="short-desc mb-0">Sản phẩm bảo đảm chất lượng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shipping Area End Here -->
+    <!-- Begin Product Area -->
+   
+   
+    <!-- Begin Footer Area -->
+    <div class="footer-area" style="border-top: 2px solid #f15b67;">
+        <div class="footer-top section-space-y-axis-100 text-black" data-bg-color="#fff" style="padding-bottom:30px">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-lg-3 col-md-3">
+                        <div class="widget-item">
+                            <div class="footer-logo pb-4">
+                                <a href="index.html">
+                                    <img src="wwwroot/assets/images/logo/vascra.png" alt="Logo"
+                                        style="max-height:116px">
+                                </a>
+                            </div>
+                            <p class="short-desc mb-2">
+                                <b>Vascara | Thương hiệu thời trang balo túi xách, giày dép, bóp ví nữ đẹp</b>
+                            </p>
+                            <div class="widget-contact-info pb-6">
+                                <ul>
+                                    <li>
+                                        <i class="pe-7s-map-marker"></i>
+                                        Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội
+                                    </li>
+                                    <li>
+                                        <i class="pe-7s-mail"></i>
+                                        <a href="mailto:vascara.com.vn">vascara.com.vn</a>
+                                    </li>
+                                    <li>
+                                        <i class="pe-7s-phone"></i>
+                                        <a href="tel:0384640190">038.464.0190</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-lg-3  col-md-3 pt-10 pt-lg-0">
+                        <div class="widget-item">
+                            <h3 class="widget-title mb-5">Tài khoản</h3>
+                            <ul class="widget-list-item">
+
+                                <li>
+                                    <a href="javascript:void(0)">Đăng Nhập</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Đăng Kí</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"> Đăng Xuất</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"> Giỏ Hàng</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"> Quản lí tài khoản</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3  col-md-3 pt-10 pt-lg-0">
+                        <div class="widget-item">
+                            <h3 class="widget-title mb-5">Danh mục sản phẩm</h3>
+                            <ul class="widget-list-item">
+                               
+                                    <li>
+                                        <a href="Category.html">Giày Cao gót</a>
+                                    </li>
+
+                                     <li>
+                                        <a href="Category.html">giày sandals</a>
+                                    </li>
+
+                                     <li>
+                                        <a href="Category.html">giày Sneaker</a>
+                                    </li>
+                                    
+                                    
+                                     <li>
+                                        <a href="Category.html">Giày Boots</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="Category.html">Giày da thật</a>
+                                    </li>
+                                    <li>
+                                        <a href="Category.html">Giày lười</a>
+                                    </li>
+                                    
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-3 pt-10 pt-lg-0">
+                        <div class="widget-item">
+                            <h3 class="widget-title mb-5">Newsletters</h3>
+                            <p class="short-desc">
+                                <iframe name="f1ebba1d63f9ea8" width="1000px" height="1000px"
+                                    data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin"
+                                    frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                    allow="encrypted-media"
+                                    src="https://www.facebook.com/v4.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1110e43cd6ac88%26domain%3Dgiaynhatchinhhang.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fgiaynhatchinhhang.vn%252Ff313b0f43bf51f%26relation%3Dparent.parent&amp;container_width=270&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgiaynhatxachtaychinhhang%2F%3Fref%3Dbr_rs&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false"
+                                    style="border: none; visibility: visible; width: 270px; height: 130px;"
+                                    class=""></iframe>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom py-3" data-bg-color="#000">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright">
+                            <span class="copyright-text text-white">
+                                © 2021 Vascara Made with <i class="fa fa-heart text-danger"></i> by Nhóm 6 sinh viên HAUI
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Area End Here -->
+    <!-- Begin Scroll To Top -->
+    <a class="scroll-to-top" href="#">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+    <!-- Scroll To Top End Here -->
+    </div>
+    <script src="wwwroot/assets/js/vendor.min.js"></script>
+    <script src="wwwroot/assets/js/plugins.min.js"></script>
+
+    <!--Main JS (Common Activation Codes)-->
+    <script src="wwwroot/assets/js/main.min.js"></script>
+    
+    <script src="wwwroot/js/custom/carttt.js"></script>
+    
+</body>
+
+</html>
