@@ -1,0 +1,94 @@
+﻿@model IEnumerable<BaiTapNhom6.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutAdmin.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Category.category_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category1.category_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.product_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.product_height)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.product_type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.product_description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.product_price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.product_image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.product_amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.created_at)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.updated_at)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category.category_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category1.category_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.product_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.product_height)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.product_type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.product_description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.product_price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.product_image)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.product_amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.created_at)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.updated_at)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.product_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.product_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.product_id })
+        </td>
+    </tr>
+}
+
+</table>

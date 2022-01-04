@@ -1,0 +1,107 @@
+﻿@model BaiTapNhom6.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.category_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.category_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category1.category_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category1.category_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_height)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_height)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_image)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.created_at)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.created_at)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.updated_at)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.updated_at)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.product_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
