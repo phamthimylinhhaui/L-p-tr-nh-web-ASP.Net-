@@ -1,0 +1,239 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="breadcrumb-area breadcrumb-height" data-bg-image="https://theme.hstatic.net/1000317997/1000499273/14/ms_banner_img1.jpg?v=198">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-lg-12">
+                <div class="breadcrumb-item">
+                    <div class="main-breadcrum">
+                        <h2 class="breadcrumb-heading">Đăng Nhập</h2>
+                        <ul style="text-align:center">
+                            <li>
+                                <a href="/">Trang chủ <i class="pe-7s-angle-right"></i></a>
+                            </li>
+                            <li> Đăng Nhập</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="user-form-part">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+                <div class="user-form-card">
+                    <div class="user-form-title">
+                        <a href="/" class="header-logo-login">
+                            <img src="wwwroot/assets/images/logo/vascra.png" alt="Header Logo">
+                        </a>
+                        <p style="padding-top:10px">Chào mừng bạn đã đến với VASCARA. Vui lòng nhập đúng thông tin để đăng nhập</p>
+                    </div>
+
+                    <form class="user-form" action="/Profile/Login" method="post">
+                        <input name="__RequestVerificationToken" type="hidden" value="d241dueAWhoCRsiW_n_4ie97WZmU8hTFd8UJxPFTBRJYinpgg5qIcy4861Sebs3iCD3ubNgpLsR6TBIinOlXi1S7BZL6Mi4-QhRp-uRmQDA1" />
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Nhập địa chỉ email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" class="form-control" placeholder="Nhập mật khẩu" />
+                        </div>
+                        <div class="form-button">
+                            <button type="submit" style="border-color: #f15b67; font-size: 18px;">Đăng nhập</button>
+                        </div>
+                    </form>
+
+                    <div class="user-form-remind">
+                        <p>
+                            Bạn chưa có tài khoản?<a href="register.html" style="color: #f15b67;">Đăng ký</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Start footer -->
+<!-- Begin Shipping Area -->
+<div class="shipping-area " style="padding-bottom:100px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="shipping-item">
+                    <div class="shipping-img">
+                        <img src="https://cuahangdongho.vn/wp-content/uploads/2020/06/xe-tai.png" alt="Shipping Icon">
+                    </div>
+                    <div class="shipping-content">
+                        <h5 class="title">Miễn phí vận chuyển</h5>
+                        <p class="short-desc mb-0">Ưu đãi giao hàng tận nhà miễn phí</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pt-6 pt-md-0">
+                <div class="shipping-item">
+                    <div class="shipping-img">
+                        <img src="https://cuahangdongho.vn/wp-content/uploads/2020/06/logo1.png" alt="Shipping Icon">
+                    </div>
+                    <div class="shipping-content">
+                        <h5 class="title">Hỗ trợ trực tuyến</h5>
+                        <p class="short-desc mb-0">Hỗ trợ trực tuyến 24/7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pt-6 pt-lg-0">
+                <div class="shipping-item">
+                    <div class="shipping-img">
+                        <img src="https://cuahangdongho.vn/wp-content/uploads/2020/06/the-besst.png" alt="Shipping Icon">
+                    </div>
+                    <div class="shipping-content">
+                        <h5 class="title">Bảo đảm chất lượng</h5>
+                        <p class="short-desc mb-0">Sản phẩm bảo đảm chất lượng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Shipping Area End Here -->
+<!-- Begin Product Area -->
+<!-- Begin Footer Area -->
+<div class="footer-area" style="border-top: 2px solid #f15b67;">
+    <div class="footer-top section-space-y-axis-100 text-black" data-bg-color="#fff" style="padding-bottom:30px">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="widget-item">
+                        <div class="footer-logo pb-4">
+                            <a href="index.html">
+                                <img src="wwwroot/assets/images/logo/vascra.png" alt="Logo"
+                                     style="max-height:116px">
+                            </a>
+                        </div>
+                        <p class="short-desc mb-2">
+                            <b>Vascara | Thương hiệu thời trang balo túi xách, giày dép, bóp ví nữ đẹp</b>
+                        </p>
+                        <div class="widget-contact-info pb-6">
+                            <ul>
+                                <li>
+                                    <i class="pe-7s-map-marker"></i>
+                                    Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội
+                                </li>
+                                <li>
+                                    <i class="pe-7s-mail"></i>
+                                    <a href="mailto:vascara.com.vn">vascara.com.vn</a>
+                                </li>
+                                <li>
+                                    <i class="pe-7s-phone"></i>
+                                    <a href="tel:0384640190">038.464.0190</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-3  col-md-3 pt-10 pt-lg-0">
+                    <div class="widget-item">
+                        <h3 class="widget-title mb-5">Tài khoản</h3>
+                        <ul class="widget-list-item">
+
+                            <li>
+                                <a href="javascript:void(0)">Đăng Nhập</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Đăng Kí</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"> Đăng Xuất</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"> Giỏ Hàng</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"> Quản lí tài khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3  col-md-3 pt-10 pt-lg-0">
+                    <div class="widget-item">
+                        <h3 class="widget-title mb-5">Danh mục sản phẩm</h3>
+                        <ul class="widget-list-item">
+
+                            <li>
+                                <a href="Category.html">Giày Cao gót</a>
+                            </li>
+
+                            <li>
+                                <a href="Category.html">giày sandals</a>
+                            </li>
+
+                            <li>
+                                <a href="Category.html">giày Sneaker</a>
+                            </li>
+
+
+                            <li>
+                                <a href="Category.html">Giày Boots</a>
+                            </li>
+
+                            <li>
+                                <a href="Category.html">Giày da thật</a>
+                            </li>
+                            <li>
+                                <a href="Category.html">Giày lười</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-3 pt-10 pt-lg-0">
+                    <div class="widget-item">
+                        <h3 class="widget-title mb-5">Newsletters</h3>
+                        <p class="short-desc">
+                            <iframe name="f1ebba1d63f9ea8" width="1000px" height="1000px"
+                                    data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin"
+                                    frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                    allow="encrypted-media"
+                                    src="https://www.facebook.com/v4.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1110e43cd6ac88%26domain%3Dgiaynhatchinhhang.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fgiaynhatchinhhang.vn%252Ff313b0f43bf51f%26relation%3Dparent.parent&amp;container_width=270&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgiaynhatxachtaychinhhang%2F%3Fref%3Dbr_rs&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false"
+                                    style="border: none; visibility: visible; width: 270px; height: 130px;"
+                                    class=""></iframe>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom py-3" data-bg-color="#000">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright">
+                        <span class="copyright-text text-white">
+                            © 2021 Vascara Made with <i class="fa fa-heart text-danger"></i> by Nhóm 6 sinh viên HAUI
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

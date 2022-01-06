@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from template.hasthemes.com/harmic/harmic/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Sep 2021 16:27:54 GMT -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Harmic - Website bán hàng của sinh viên HAUI</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/wwwroot/assets/images/favicon.ico" />
+
+    <!-- CSS
+    ============================================ -->
+    <!-- Minify Version -->
+    <link rel="stylesheet" href="~/wwwroot/assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="~/wwwroot/assets/css/plugins/plugins.min.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="~/wwwroot/assets/css/style.min.css">
+    <style>
+        .product-add-action ul li button {
+            background-color: #fff;
+            width: 50px;
+            height: 50px;
+            line-height: 53px;
+            text-align: center;
+            display: block;
+            -webkit-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+        }
+
+        .dieuchinhcsscart {
+            position: absolute;
+            width: 120px;
+            left:15px
+        }
+
+        .main-header.header-sticky.sticky {
+            top: 100px;
+            z-index: 1;
+        }
+
+        .product-add-action ul li button:hover {
+            background: #bac34e;
+            color: #fff;
+        }
+
+        .product-add-action ul li button {
+            border-radius: 10px;
+            background-color: #fff;
+            width: 50px;
+            height: 50px;
+            line-height: 53px;
+            text-align: center;
+            display: block;
+            -webkit-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            border: 1px solid #bac34e;
+        }
+    </style>
+
+    @RenderSection("addcss", required: false)
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    @{ Html.RenderAction("_Header", "Base"); }
+    <!-- Start menu pc -->
+    @{ Html.RenderAction("_MenuPC", "Base"); }
+    <!-- End menu pc -->
+    <!-- Start menu mobile -->
+    @{ Html.RenderAction("_MenuMobile", "Base"); }
+    <!-- End menu mobile -->
+
+    @RenderBody()
+    <!-- Start footer -->
+    <!-- Begin Shipping Area -->
+    <div class="shipping-area " style="padding-bottom:100px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="shipping-item">
+                        <div class="shipping-img">
+                            <img src="~/wwwroot/assets/images/shipping/icon/plane.png" alt="Shipping Icon">
+                        </div>
+                        <div class="shipping-content">
+                            <h5 class="title">Miễn phí vận chuyển</h5>
+                            <p class="short-desc mb-0">Ưu đãi giao hàng tận nhà miễn phí</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-6 pt-md-0">
+                    <div class="shipping-item">
+                        <div class="shipping-img">
+                            <img src="~/wwwroot/assets/images/shipping/icon/earphones.png" alt="Shipping Icon">
+                        </div>
+                        <div class="shipping-content">
+                            <h5 class="title">Hỗ trợ trực tuyến</h5>
+                            <p class="short-desc mb-0">Hỗ trợ trực tuyến 24/7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-6 pt-lg-0">
+                    <div class="shipping-item">
+                        <div class="shipping-img">
+                            <img src="~/wwwroot/assets/images/shipping/icon/shield.png" alt="Shipping Icon">
+                        </div>
+                        <div class="shipping-content">
+                            <h5 class="title">Thanh toán an toàn</h5>
+                            <p class="short-desc mb-0">Hệ thống thanh toán hoàn toàn an toàn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shipping Area End Here -->
+    <!-- Begin Product Area -->
+    <!-- Product Area End Here -->
+    <!-- Begin Banner Area -->
+    <div class="banner-with-testimonial py-10" data-bg-image="/wwwroot/assets/images/banner/2-1-1920x523.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="parallax-img-wrap">
+                        <div class="tomatoes">
+                            <div class="scene fill" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; position: relative; pointer-events: none;">
+                                <div class="expand-width" data-depth="0.5" style="transform: translate3d(-3.4px, -4.1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+                                    <img src="~/wwwroot/assets/images/slider/inner-img/2-1-601x426.png" alt="Inner Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <div class="swiper-container testimonial-slider text-white">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content section-title">
+                                        <span class="sub-title">Mọi người nói gì về chúng tôi.</span>
+                                        <h2 class="title mb-6">Phản hồi của khách hàng</h2>
+                                        <p class="short-desc">
+                                            Giao hàng nhanh chóng. Đóng gói cẩn thận. Shipper thân thiện.
+                                            Giá không nhỉnh hơn siêu thị là bao nhưng được giao tận nhà, không phải xếp hàng và tụ tập đông người.
+                                            Ở nhà mùa dịch vẫn có thể mua.
+                                        </p>
+                                        <div class="user-info">
+                                            <div class="user-img">
+                                                <img src="~/wwwroot/assets/images/testimonial/user/1.png" alt="User Image">
+                                            </div>
+                                            <div class="user-content">
+                                                <span class="user-name">Lâm Thảo Linh</span>
+                                                <span class="user-occupation">Khách hàng</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content section-title">
+                                        <span class="sub-title">Mọi người nói gì về chúng tôi.</span>
+                                        <h2 class="title mb-6">Phản hồi của khách hàng</h2>
+                                        <p class="short-desc">
+                                            Lần đầu tiên mua hàng trên website mà ưng dễ sợ. Mình giới thiệu mọi người cùng mua luôn Hàng rất tươi, như mình trực tiếp đi chọn lựa.
+                                            Đóng gói ưng vô cùng, bọc giấy cẩn thận. RẤT RẤT ƯNG... ĐT mình ko được, bạn shipper đứng dưới nhà kêu lên...
+                                            nhận hàng lúc 10h30 sáng, nấu kịp bữa trưa.
+                                        </p>
+                                        <div class="user-info">
+                                            <div class="user-img">
+                                                <img src="~/wwwroot/assets/images/testimonial/user/1.png" alt="User Image">
+                                            </div>
+                                            <div class="user-content">
+                                                <span class="user-name">Nguyễn Kim Trọng</span>
+                                                <span class="user-occupation">Khách hàng</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="testimonial-button-next"></div>
+                        <div class="testimonial-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Area End Here -->
+    <!-- Begin Brand Area -->
+    <div class="brand-area section-space-y-axis-100">
+        <div class="container">
+            <div class="section-title text-center pb-55">
+                <span class="sub-title text-primary">BRAND</span>
+                <h2 class="title mb-0">Thương hiệu đồng hành cùng chúng tôi</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="swiper-container brand-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a class="brand-item" href="javascript:void(0)">
+                                    <img src="~/wwwroot/assets/images/brand/1-1.png" alt="Brand Image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="brand-item" href="javascript:void(0)">
+                                    <img src="~/wwwroot/assets/images/brand/1-2.png" alt="Brand Image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="brand-item" href="javascript:void(0)">
+                                    <img src="~/wwwroot/assets/images/brand/1-3.png" alt="Brand Image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="brand-item" href="javascript:void(0)">
+                                    <img src="~/wwwroot/assets/images/brand/1-4.png" alt="Brand Image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="brand-item" href="javascript:void(0)">
+                                    <img src="~/wwwroot/assets/images/brand/1-5.png" alt="Brand Image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Brand Area End Here -->
+    <!-- Begin Footer Area -->
+    <div class="footer-area">
+        <div class="footer-top section-space-y-axis-100 text-black" data-bg-color="#e5ddcc">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="widget-item">
+                            <div class="footer-logo pb-4">
+                                <a href="index.html">
+                                    <img src="~/wwwroot/assets/images/logo/dark.png" alt="Logo">
+                                </a>
+                            </div>
+                            <p class="short-desc mb-2">
+                                Harmic mang nông sản Việt đi khắp đất nước. Tận hưởng cấc hương vị đặc sản ngay tại nhà.
+                            </p>
+                            <div class="widget-contact-info pb-6">
+                                <ul>
+                                    <li>
+                                        <i class="pe-7s-map-marker"></i>
+                                        Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội
+                                    </li>
+                                    <li>
+                                        <i class="pe-7s-mail"></i>
+                                        <a href="mailto:harmic.com.vn">harmic.com.vn</a>
+                                    </li>
+                                    <li>
+                                        <i class="pe-7s-phone"></i>
+                                        <a href="tel:0384640190">038.464.0190</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="payment-method">
+                                <a href="javascript:void(0)">
+                                    <img src="~/wwwroot/assets/images/payment/1.png" alt="Payment Method">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-lg-3  col-md-3 pt-10 pt-lg-0">
+                        <div class="widget-item">
+                            <h3 class="widget-title mb-5">Thông tin của chúng tôi</h3>
+                            <ul class="widget-list-item">
+                                <li>
+                                    <a href="javascript:void(0)">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Hướng dẫn mua hàng</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Chính sách mua hàng</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Chính sách mua hàng</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Chính sách đỏi trả</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3  col-md-3 pt-10 pt-lg-0">
+                        <div class="widget-item">
+                            <h3 class="widget-title mb-5">Danh mục</h3>
+                            <ul class="widget-list-item">
+                                <li>
+                                    <a href="javascript:void(0)">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Sản phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Hình ảnh</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Khuyến mại</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Liên hệ</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-3 pt-10 pt-lg-0">
+                        <div class="widget-item">
+                            <h3 class="widget-title mb-5">Newsletters</h3>
+                            <p class="short-desc">
+                                <iframe width="100%" height="200" style="border: none; overflow: hidden;" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FThu%25E1%25BB%2591c-Giao-T%25E1%25BA%25ADn-Nh%25C3%25A0-1106186839483457%2F&amp;tabs=timeline&amp;width=340&amp;height=500&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=528747837290649" frameborder="0" scrolling="no"></iframe>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom py-3" data-bg-color="#bac34e">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright">
+                            <span class="copyright-text text-white">
+                                © 2021 Harmic Made with <i class="fa fa-heart text-danger"></i> by Nhóm sinh viên HAUI
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Area End Here -->
+    <!-- Begin Scroll To Top -->
+    <a class="scroll-to-top" href="#">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+    <!-- Scroll To Top End Here -->
+    </div>
+    <script src="~/wwwroot/assets/js/vendor.min.js"></script>
+    <script src="~/wwwroot/assets/js/plugins.min.js"></script>
+
+    <!--Main JS (Common Activation Codes)-->
+    <script src="~/wwwroot/assets/js/main.min.js"></script>
+    
+    <script src="~/wwwroot/js/custom/carttt.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>

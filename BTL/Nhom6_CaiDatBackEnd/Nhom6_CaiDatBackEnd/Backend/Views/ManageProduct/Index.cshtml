@@ -1,0 +1,211 @@
+﻿@model IEnumerable<ShopGiay.Models.Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section addcss{
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="~/Areas/Asset/css/bootstrap-datetimepicker.min.css" />
+
+    <!-- Datatables CSS -->
+    <link rel="stylesheet"
+          href="~/Areas/Asset/plugins/datatables/datatables.min.css" />
+}
+
+
+
+<div class="content container-fluid">
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="row">
+            <div class="col">
+                <h3 class="page-title">Quản lý sản phẩm</h3>
+            </div>
+            <div class="col-auto text-right">
+                <a class="btn btn-white ml-3"
+                   href="javascript:void(0);"
+                   id="filter_search">
+                    <i class="fas fa-search"></i> Tìm kiếm
+                </a>
+                <a href="@Url.Action("Create","ManageProduct")"
+                   class="btn btn-primary ml-3">
+                    <i class="fas fa-plus"></i> Thêm sản phẩm
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /Page Header -->
+    <!-- Start alert -->
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div style="display: none" id="deletee" class="alert alert-danger text-center" role="alert"></div>
+        </div>
+        <div class="col-4"></div>
+
+    </div>
+    <!-- End alert -->
+    <!-- Search Filter -->
+    <div class="card filter-card" id="filter_inputs">
+        <div class="card-body pb-0">
+            <form action="#" method="post">
+                <div class="row filter-row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="form-group">
+                            <label>Tên sản phẩm</label>
+                            <input class="form-control" type="text" name="SearchString" />
+                        </div>
+                    </div>
+                    @*<div class="col-sm-6 col-md-3">
+                            <div class="form-group">
+                                <label>Từ ngày</label>
+                                <div class="cal-icon">
+                                    <input class="form-control datetimepicker"
+                                           type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="form-group">
+                                <label>Đến ngày</label>
+                                <div class="cal-icon">
+                                    <input class="form-control datetimepicker"
+                                           type="text" />
+                                </div>
+                            </div>
+                        </div>*@
+                    <div class="col-sm-6 col-md-3">
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-block" type="submit">
+                                Lọc
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /Search Filter -->
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-center mb-0 datatable">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Danh mục</th>
+                                    <th>Giá</th>
+                                    <th>Số lượng còn</th>
+                                    <th class="text-center">Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+
+                                    <tr>
+                                        <td>@Html.DisplayFor(modelItem => item.product_id)</td>
+                                        <td>
+
+                                            @{ var ImagePath = "~/wwwroot/assets/images/product/medium-size/" + item.product_image;}
+                                            <img class="rounded service-img mr-1"
+                                                 src="@Url.Content(@ImagePath)"
+                                                 alt="" />
+                                            @Html.DisplayFor(modelItem => item.product_name)
+                                        </td>
+                                        <td>@Html.DisplayFor(modelItem => item.Category.category_name)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.product_price) vnđ</td>
+                                        <td>@Html.DisplayFor(modelItem => item.product_amount)</td>
+                                        <td class="text-right">
+                                            <a href="@Url.Action("Details","ManageProduct",new {id = item.product_id})"
+                                               class="btn btn-sm bg-success-light mr-2">
+                                                <i class="far fa-eye mr-1"></i>Chi tiết
+                                            </a>
+                                            <a href="@Url.Action("Update","ManageProduct",new {id = item.product_id})"
+                                               class="btn btn-sm bg-success-light mr-2">
+                                                <i class="far fa-edit mr-1"></i>Sửa
+                                            </a>
+                                            <a data-id="40"
+                                               href="javascript:void(0);"
+                                               class="
+                                                btn btn-sm
+                                                bg-danger-light
+                                                mr-2
+                                                delete_review_comment
+                                                "
+                                               data-toggle="modal"
+                                               data-target="#model-@item.product_id">
+                                                <i class="far fa-trash-alt mr-1"></i> Xoá
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+@foreach (var item in Model)
+{
+    <div class="modal fade"
+         id="model-@item.product_id"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Xác nhận?</h5>
+                    <button type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">Bạn có muốn xoá bản ghi này?</div>
+                <div class="modal-footer">
+                    <button type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal">
+                        Không
+                    </button>
+                    <button onclick="handleDelete(@item.product_id, `@item.product_name`)" type="button" class="btn btn-primary">Đồng ý</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+
+<script>
+    const handleDelete = async (id, name) => {
+
+        const response = await fetch(`/admin/ManageProduct/Delete?id=${id}`, {
+            method: 'POST',
+        });
+
+        const data = await response.json();
+
+        if (data) {
+            window.location.reload();
+        } else {
+            $(`#model-${id}`).modal("hide");
+            toastr.error('Lỗi khi xoá tài khoản', 'Lỗi')
+        }
+    }
+</script>

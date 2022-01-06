@@ -1,0 +1,189 @@
+﻿@model EcomartVietNam.Models.User
+
+@{
+    ViewBag.Title = Model.full_name;
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+
+@section addcss{
+    <link rel="stylesheet" href="~/wwwroot/css/custom/profile.css" />
+}
+<main class="main-content">
+    <div class="breadcrumb-area breadcrumb-height" data-bg-image="/wwwroot/assets/images/breadcrumb/bg/1-1-1920x373.jpg">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-item">
+                        <h2 class="breadcrumb-heading">Thông tin tài khoản</h2>
+                        <ul>
+                            <li>
+                                <a href="@Url.Action("Index","Home")">Trang chủ <i class="pe-7s-angle-right"></i></a>
+                            </li>
+                            <li>Thông tin tài khoản</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="account-page-area section-space-y-axis-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul class="nav myaccount-tab-trigger" id="account-page-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="account-dashboard-tab" data-bs-toggle="tab" href="#account-dashboard" role="tab" aria-controls="account-dashboard" aria-selected="true">Quản lí tài khoản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="account-orders-tab" data-bs-toggle="tab" href="#account-orders" role="tab" aria-controls="account-orders" aria-selected="false">Đơn hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="account-address-tab" data-bs-toggle="tab" href="#account-address" role="tab" aria-controls="account-address" aria-selected="false">Địa chỉ </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="account-details-tab" data-bs-toggle="tab" href="#account-details" role="tab" aria-controls="account-details" aria-selected="false">Thông tin tài khoản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="account-logout-tab" href="@Url.Action("Logout","Profile")" role="tab" aria-selected="false">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-9">
+
+                    @if (ViewBag.Information != null)
+                    {
+                        <br />
+                        <div class="alert alert-info" role="alert">@ViewBag.Information</div>
+                    }
+
+
+                    <div class="tab-content myaccount-tab-content" id="account-page-tab-content">
+                        <div class="tab-pane fade show active" id="account-dashboard" role="tabpanel" aria-labelledby="account-dashboard-tab">
+                            <div class="myaccount-dashboard">
+                                <p>
+                                    Xin chào <b>@Model.full_name</b> (bạn không phải là <b> @Model.full_name</b> ? <a href="@Url.Action("Logout","Profile")">
+                                       Đăng xuất
+                                    </a>)
+                                </p>
+                                <p>
+                                    Chào mừng bạn đã đến với hệ thống quản lí tài khoản của Harmic. <br />Tại đây bạn có thể theo dõi các thông tin như: 
+                                    <br />
+                                    <b  >Địa chỉ giao hàng</b>
+                                    <b style="padding-left:20px">thông tin tài khoản</b> 
+                                    <b style="padding-left:20px">đơn hàng đã đặt</b>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-orders" role="tabpanel" aria-labelledby="account-orders-tab">
+                            <div class="myaccount-orders">
+                                <h4 class="small-title">Đơn hàng của tôi</h4>
+                            </div>
+                            @{ Html.RenderAction("_ListOrder", "Base"); }
+                        </div>
+                        <div class="tab-pane fade" id="account-address" role="tabpanel" aria-labelledby="account-address-tab">
+                            <div class="myaccount-address">
+                               
+                                <div class="row">
+                                    <div class="col">
+                                        <h4 class="small-title">Địa chỉ nhận hàng</h4>
+                                        <p style="margin-bottom:30px">Địa chỉ bên dưới sẽ được sử dụng trên trang thanh toán theo mặc định.</p>
+                                        <address style="font-size:20px">
+                                            @Model.address
+                                        </address>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-details" role="tabpanel" aria-labelledby="account-details-tab">
+                            <div class="myaccount-details">
+                                <div class="account-title">
+                                    <h4 style="margin-bottom: 40px; font-size: 32px;">Thông tin tài khoản</h4>
+                                    <a href="@Url.Action("ChangePass","Profile")" style="background: #bac34e; padding: 10px 0px; margin-bottom: 40px !important; display: block; text-align: center; color: #fff; font-size: 18px;">Đổi mật khẩu</a>
+                                </div>
+                                <form action="@Url.Action("Update","Profile")" method="post" class="account-content">
+                                    @Html.AntiForgeryToken()
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    <div class="row">
+                                        
+                                        <div hidden="hidden"><input type="text" name="id" value="@Model.user_id" /></div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Họ Tên</label>
+                                                @*<input class="form-control"
+                                                                type="text"
+                                                                name="fullname"
+                                                                value="@Model.full_name" />*@
+                                                @Html.EditorFor(model => model.full_name, new { htmlAttributes = new { @class = "form-control", value = Model.full_name } })
+                                                @Html.ValidationMessageFor(model => model.full_name, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Email</label>
+                                                <input readonly="readonly" class="form-control"
+                                                       type="email"
+                                                       name="email"
+                                                       value="@Model.email" />
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Số điện thoại</label>
+                                                @*<input class="form-control"
+                                                    type="number"
+                                                    name="phone"
+                                                    value="@Model.phone_number" />*@
+                                                @Html.EditorFor(model => model.phone_number, new { htmlAttributes = new { @class = "form-control", value = Model.phone_number } })
+                                                @Html.ValidationMessageFor(model => model.phone_number, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Địa chỉ</label>
+                                                @*<input class="form-control"
+                                                                type="text"
+                                                                name="address"
+                                                                value="@Model.address" />*@
+                                                @Html.EditorFor(model => model.address, new { htmlAttributes = new { @class = "form-control", value = Model.address } })
+                                                @Html.ValidationMessageFor(model => model.address, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 align-middle">
+                                            <button class=" btn-inline pt-2 pb-2 mt-4 btn btn-custom-size lg-size btn-secondary btn-primary-hover rounded-0" style="line-height:30px">
+                                                <span>Cập nhật</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+@section Scripts {
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+}
+<style>
+    label.form-label {
+        font-size: 18px;
+        margin-top: 20px;
+        font-weight: 500;
+    }
+    .pagination .page-item:not(:last-child){
+        padding-right:0px !important;
+    }
+    li.page-link.page-item.active {
+        background: #bac34e !important;
+        color: #fff !important;
+    }
+</style>

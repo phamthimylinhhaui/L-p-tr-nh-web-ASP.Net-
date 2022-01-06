@@ -1,0 +1,160 @@
+﻿@model PagedList.IPagedList<EcomartVietNam.Models.Product>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = ViewBag.Category;
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+
+
+
+<main class="main-content">
+    @{ Html.RenderAction("_BreadcrumbLevelOne", "Base", new { id = ViewContext.RouteData.Values["id"].ToString() }); }
+    <style>
+        .widgets-searchbox .input-field {
+            margin-bottom: 30px;
+            height: 45px;
+            padding-right: 0px;
+        }
+        .nice-select.form-select.filter-select.wide.rounded-0 {
+            border: 1px solid #201d1d1f;
+        }
+        .nice-select:after{
+            display:none;
+        }
+        .product-item {
+            box-shadow: -1px 1px 2px 0px #3a393969;
+            border-radius: 10px;
+        }
+        .product-content {
+           
+            background: #bac34e7d;
+        }
+
+        button.shop-widget-btn {
+            background: #ffff;
+            border: 1px solid;
+            padding: 5px 20px;
+            border-radius: 10px;
+            color: #bac34e;
+        }
+    </style>
+    <div class="shop-area section-space-y-axis-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 order-lg-1 order-2 pt-10 pt-lg-0">
+                    <div class="sidebar-area">
+                        <h2 class="widgets-title mb-5">Lọc theo giá</h2>
+                        <div class="widgets-searchbox">
+                            <form>
+                                <input value="@ViewBag.from" class="input-field" type="number" placeholder="Bắt đầu" id="fromPrice" />
+                                <input value="@ViewBag.to" class="input-field" id="toPrice" type="number" placeholder="Kết thúc" />
+
+                                <div class="group-btn_wrap d-grid gap-2">
+                                    <button type="button" onclick="filterProduct()" class="shop-widget-btn btn btn-secondary btn-primary-hover">
+                                       <span>Lọc</span>
+                                    </button>
+                                   
+                                </div>
+                            </form>
+                        </div>
+                       
+
+                    </div>
+                </div>
+                <div class="col-lg-9 order-lg-2 order-1">
+                    <div class="product-topbar">
+                        <ul>
+                            
+                            
+                            <li class="short" style="display: flex; align-items: center; margin-right: 2px;">
+                                <div class="filter-short" style="display: flex; align-items: center;">
+                                    <label class="filter-label" style="width:190px">Sắp xếp theo :</label>
+                                    <select id="filter" onchange="onSort()" class="form-select filter-select">
+                                        <option id="hdk-default" value="default" selected>Mặc định</option>
+                                        <option id="hdk-asc" value="asc">Giá từ thấp tới cao</option>
+                                        <option id="hdk-desc" value="desc">Giá từ cao tới thấp</option>
+                                    </select>
+                                </div>
+
+                            </li>
+
+                            <li class="diechinhbutton" style="margin-right:20px">
+                                
+                                    <button type="button" onclick="clearFilter()" class="shop-widget-btn"><i class="far fa-trash-alt"></i>Xoá bộ lọc</button>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content text-charcoal pt-8">
+                        <div class="tab-pane fade show active" id="list-view" role="tabpanel"
+                             aria-labelledby="list-view-tab">
+                            <div class="product-grid-view row">
+
+                                @foreach (var item in Model)
+                                {
+
+                                    <div class="col-lg-4 col-sm-6 pt-6">
+                                        <div class="product-item">
+                                            <div class="product-img img-zoom-effect">
+                                                <a href="@Url.Action("Detail","Product",  new { id = item.product_id })">
+                                                    <img class="img-full"
+                                                         src="@Url.Content("~/wwwroot/assets/images/product/medium-size/" + item.product_image)"
+                                                         alt="Product Images">
+                                                </a>
+                                                <div class="product-add-action">
+                                                    <ul>
+                                                        <li>
+                                                            <a onclick="addToCart(@item.product_id, @item.product_amount)" title="Thêm vào giỏ">
+                                                                <i class="pe-7s-cart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="@Url.Action("Detail","Product",  new { id = item.product_id })">
+                                                                <i class="pe-7s-look"></i>
+                                                            </a>
+                                                        </li>
+                                                       
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <a class="product-name" href="@Url.Action("Detail","Product",  new { id = item.product_id })" style="color:#000">@item.product_name</a>
+                                                <div class="price-box pb-1">
+                                                    <span class="new-price">@string.Format("{0:#,##}", item.product_price) vnđ</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    }
+                                
+
+
+                                </div>
+                        </div>
+                    </div>
+                    <div class="pagination-area pt-10">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                @Html.PagedListPager(Model, page => Url.Action("Detail", new
+                              {
+                                  page = page,
+                                  fromPrice = ViewBag.from,
+                                  toPrice = ViewBag.to,
+                                  order = ViewBag.order
+                              }), new PagedListRenderOptions()
+                              {
+                                  LiElementClasses = new string[] { "page-item", "page-link" }
+                              })
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="~/Scripts/filterrr.js"></script>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vascara - Website bán giày của sinh viên nhóm 2 HAUI</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/wwwroot/assets/images/favicon.ico" />
+
+    <!-- CSS
+    ============================================ -->
+    <!-- Minify Version -->
+    <link rel="stylesheet" href="~/wwwroot/assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="~/wwwroot/assets/css/plugins/plugins.min.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="~/wwwroot/assets/css/style.min.css">
+    
+</head>
+<body>
+    @{ 
+        Html.RenderPartial("_Header");
+    }
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+
+    </div>
+    <footer>
+        @{
+            Html.RenderPartial("Footer");
+        }
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

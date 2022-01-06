@@ -1,0 +1,156 @@
+﻿@model PagedList.IPagedList<EcomartVietNam.Models.Product>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+
+<div class="slider-area">
+
+    <!-- Main Slider -->
+    <div class="swiper-container main-slider-2 swiper-arrow with-bg_white">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide animation-style-01">
+                <div class="slide-inner bg-height" data-bg-image="/wwwroot/assets/images/slider/bg/2-1.jpg">
+                    <div class="container">
+                        <div class="slide-content">
+                            <h2 class="title font-weight-bold mb-4">Thực phẩm việt<br> tươi ngon, tự nhiên</h2>
+                            <p class="short-desc different-width mb-9">
+                                Sự lựa chọn hoàn hảo cho chất lượng của thực phẩm. Điểm 10 về chất lượng <br />cho sức khỏe  của gia đình bạn.Nhanh tay mua hàng để nhận được nhiều ưu đãi nào.
+                            </p>
+                            <div class="button-wrap">
+                                <a class="btn btn-custom-size lg-size btn-primary btn-white-hover rounded-0"
+                                   href="Category/Detail/1">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide animation-style-01">
+                <div class="slide-inner bg-height" data-bg-image="/wwwroot/assets/images/slider/bg/2-2.jpg">
+                    <div class="container">
+                        <div class="slide-content">
+                            <h2 class="title font-weight-bold mb-4"> Nông sản Việt <br> Giảm 50%</h2>
+                            <p class="short-desc different-width mb-9">
+                                Cùng nhau chung tay ủng hộ nông sản việt. Cùng nhau thúc đẩy nông sản việt  <br /> đến mọi miền tổ quốc, mang những đặc sản đến mọi nhà.
+                            </p>
+                            <div class="button-wrap">
+                                <a class="btn btn-custom-size lg-size btn-primary btn-white-hover rounded-0"
+                                   href="Category/Detail/1">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination with-bg d-md-none"></div>
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+</div>
+<!-- Slider Area End Here -->
+<div class="about-banner different-bg-position section-space-y-axis-100" data-bg-image="/wwwroot/assets/images/about/banner/1-1-1920x598.jpg" style="background-image: url(&quot;assets/images/about/banner/1-1-1920x598.jpg&quot;);">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-5">
+                <div class="parallax-img-wrap">
+                    <div class="papaya">
+                        <div class="scene fill" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; position: relative; pointer-events: none;">
+                            <div class="expand-width" data-depth="0.2" style="transform: translate3d(5.9px, -7.8px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+                                <img src="~/wwwroot/assets/images/banner/inner-img/2-1-503x430.png" alt="Banner Images">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-7 align-self-center">
+                <div class="about-banner-content">
+                    <div class="section-title">
+                        <span class="sub-title">Chào mừng bạn đến với Harmic</span>
+                        <h2 class="title font-size-60 mb-6" style="font-size:40px !important">Dịch vụ của chúng tôi</h2>
+                        <p class="short-desc mb-0">
+                            Chúng tôi mang trên mình xứ mệnh từ những người nông dân của nhiều vùng miền khác nhau gửi gắm những nông sản sạch và tươi từ những vùng quê trong làng đến
+                            tận tay những người tiêu dùng. Để người tiêu dùng có thể tận hưởng được hương vị tươi ngon của những sản phầm nông sản Việt.
+                        </p>
+                        <div class="button-wrap pt-8">
+                            <a class="btn btn-custom-size lg-size btn-primary btn-dark-hover rounded-0" href="Category/Detail/1">Mua Ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Begin Product Area -->
+<div class="product-area product-style-2 section-space-y-axis-100">
+    <div class="container">
+        <div class="section-title text-center pb-55">
+            <span class="sub-title text-primary">Sản Phẩm</span>
+            <h2 class="title mb-0">Các sản phẩm của chúng tôi</h2>
+        </div>
+        <div class="row">
+
+            @foreach (var item in Model)
+            {
+                <div class="col-xl-3 col-lg-4 col-sm-6 pt-6">
+                    <div class="product-item">
+                        <div class="product-img img-zoom-effect">
+                            <a href="@Url.Action("Detail", "Product", new { id = item.product_id })">
+                                <img class="img-full" src="@Url.Content("~/wwwroot/assets/images/product/medium-size/" + item.product_image)"
+                                     alt="@item.product_name">
+                            </a>
+                            <div class="product-add-action">
+                                <ul>
+                                    <li>
+                                        <button onclick="addToCart(@item.product_id, @item.product_amount)" title="Thêm vào giỏ" class="product-add">
+                                            <i class="pe-7s-cart"></i>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <a href="@Url.Action("Detail", "Product", new { id = item.product_id })">
+                                            <i class="pe-7s-look"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <a class="product-name dieuchinhcss" href="@Url.Action("Detail", "Product", new { id = item.product_id })">@item.product_name</a>
+                            <div class="price-box pb-1">
+                                <span class="new-price">@string.Format("{0:#,##}", item.product_price) vnđ</span>
+                            </div>
+
+                        </div>
+                       
+
+                    </div>
+                </div>
+            }
+
+            <div class="col-lg-12">
+                <div class="pagination-area pt-10">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions()
+                                {
+                                    LiElementClasses = new string[] { "page-item", "page-link" }
+                                })
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,61 @@
+﻿ 
+@model IEnumerable<ShopGiayOnline.Models.Category>
+
+<div class="main-header " style="border-top: 1px solid #f15c68; border-bottom: 1px solid #f15c68;">
+    <div class="container">
+        <div class="main-header_nav position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-12 d-none d-lg-block">
+                    <div class="main-menu">
+                        <nav class="main-nav">
+                            <ul style="justify-content:left">
+                                <li class="drop-holder">
+                                    <a href="@Url.Action("Index","Home")">
+                                        <i class="pe-7s-home" style="font-size:20px"></i>
+
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="#">Giới thiệu</a>
+                                </li>
+                                <li class="drop-holder">
+                                    <a href="#">
+                                        Danh mục sản phẩm
+                                        <i class="fa fa-chevron-down" style="color: #f15b67;"></i>
+                                    </a>
+                                    <ul class="drop-menu">
+                                        @foreach (var item in Model)
+                                        {
+                                            <li><a href="@Url.Action("Detail","Category", new { id = item.category_id })">@item.category_name</a></li>
+                                        }
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Khuyến mãi</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tin tức</a>
+                                </li>
+                                <li>
+                                    <a href="#">Hình ảnh</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Liên hệ</a>
+                                </li>
+                                <li style="padding-left:70px">
+                                    <a href="tel:0384640190" style="color: #f15b67; font-weight: bold">Hotline: 038.464.0190</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:vascara.com.vn" style="color: #f15b67; font-weight: bold">Email: vascara.com.vn</a>
+                                </li>
+                            </ul style="justify-content:left">
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

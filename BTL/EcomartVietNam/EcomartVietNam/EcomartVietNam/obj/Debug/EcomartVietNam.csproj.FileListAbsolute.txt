@@ -1,0 +1,261 @@
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\EcomartVietNam.dll.config
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\EcomartVietNam.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\EcomartVietNam.pdb
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\csc.exe
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\csc.exe.config
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\csc.rsp
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\csi.exe
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\csi.exe.config
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\csi.rsp
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.AppContext.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Collections.Immutable.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Console.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Globalization.Calendars.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.IO.Compression.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.IO.FileSystem.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Net.Http.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Net.Sockets.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Reflection.Metadata.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.ValueTuple.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Xml.XPath.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\vbc.exe
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\vbc.exe.config
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\vbc.rsp
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\VBCSCompiler.exe
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\roslyn\VBCSCompiler.exe.config
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\Antlr3.Runtime.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\EntityFramework.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\EntityFramework.SqlServer.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\Microsoft.Web.Infrastructure.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\Newtonsoft.Json.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\PagedList.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\PagedList.Mvc.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\System.Web.Helpers.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\System.Web.Mvc.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\System.Web.Optimization.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\System.Web.Razor.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.Deployment.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.Razor.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\WebGrease.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\EntityFramework.xml
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\EntityFramework.SqlServer.xml
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\PagedList.xml
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\PagedList.Mvc.xml
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\System.Web.Helpers.xml
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\System.Web.Mvc.xml
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\System.Web.Optimization.xml
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\System.Web.Razor.xml
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.xml
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.Deployment.xml
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.Razor.xml
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\Newtonsoft.Json.xml
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\Antlr3.Runtime.pdb
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\obj\Debug\EcomartVietNam.csproj.CoreCompileInputs.cache
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\obj\Debug\EcomartVietNam.csproj.CopyComplete
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\obj\Debug\EcomartVietNam.dll
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\obj\Debug\EcomartVietNam.pdb
+E:\Subject\ASPNET\Source_Code\Project-ASPNET-MVC-Ecomart\EcomartVietNam\EcomartVietNam\obj\Debug\EcomartVietNam.csprojAssemblyReference.cache
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\EcomartVietNam.dll.config
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\EcomartVietNam.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\EcomartVietNam.pdb
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\csc.exe
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\csc.exe.config
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\csc.rsp
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\csi.exe
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\csi.exe.config
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\csi.rsp
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.Managed.Core.targets
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.AppContext.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Collections.Immutable.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Console.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Globalization.Calendars.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.IO.Compression.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.IO.FileSystem.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Net.Http.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Net.Sockets.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Reflection.Metadata.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.ValueTuple.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Xml.XmlDocument.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Xml.XPath.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\vbc.exe
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\vbc.exe.config
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\vbc.rsp
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\VBCSCompiler.exe
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\roslyn\VBCSCompiler.exe.config
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\Antlr3.Runtime.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\EntityFramework.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\EntityFramework.SqlServer.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\Microsoft.Web.Infrastructure.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\Newtonsoft.Json.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\PagedList.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\PagedList.Mvc.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\System.Web.Helpers.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\System.Web.Mvc.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\System.Web.Optimization.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\System.Web.Razor.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.Deployment.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.Razor.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\WebGrease.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\EntityFramework.xml
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\EntityFramework.SqlServer.xml
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\PagedList.xml
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\PagedList.Mvc.xml
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\System.Web.Helpers.xml
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\System.Web.Mvc.xml
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\System.Web.Optimization.xml
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\System.Web.Razor.xml
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.xml
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.Deployment.xml
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.Razor.xml
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\Newtonsoft.Json.xml
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\Antlr3.Runtime.pdb
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\obj\Debug\EcomartVietNam.csproj.AssemblyReference.cache
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\obj\Debug\EcomartVietNam.csproj.CoreCompileInputs.cache
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\obj\Debug\EcomartVietNam.csproj.CopyComplete
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\obj\Debug\EcomartVietNam.dll
+F:\BTL\Nhom2_BTL\EcomartVietNam\EcomartVietNam\obj\Debug\EcomartVietNam.pdb
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\EcomartVietNam.dll.config
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\EcomartVietNam.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\EcomartVietNam.pdb
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\csc.exe
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\csc.exe.config
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\csc.rsp
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\csi.exe
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\csi.exe.config
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\csi.rsp
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.Managed.Core.targets
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.AppContext.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Collections.Immutable.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Console.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Globalization.Calendars.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.IO.Compression.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.IO.FileSystem.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Net.Http.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Net.Sockets.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Reflection.Metadata.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.ValueTuple.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Xml.XmlDocument.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Xml.XPath.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\vbc.exe
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\vbc.exe.config
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\vbc.rsp
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\VBCSCompiler.exe
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\roslyn\VBCSCompiler.exe.config
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\Antlr3.Runtime.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\EntityFramework.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\EntityFramework.SqlServer.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\Microsoft.Web.Infrastructure.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\Newtonsoft.Json.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\PagedList.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\PagedList.Mvc.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\System.Web.Helpers.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\System.Web.Mvc.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\System.Web.Optimization.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\System.Web.Razor.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.Deployment.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.Razor.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\WebGrease.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\EntityFramework.xml
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\EntityFramework.SqlServer.xml
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\PagedList.xml
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\PagedList.Mvc.xml
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\System.Web.Helpers.xml
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\System.Web.Mvc.xml
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\System.Web.Optimization.xml
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\System.Web.Razor.xml
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.xml
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.Deployment.xml
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\System.Web.WebPages.Razor.xml
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\Newtonsoft.Json.xml
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\Antlr3.Runtime.pdb
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\obj\Debug\EcomartVietNam.csproj.AssemblyReference.cache
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\obj\Debug\EcomartVietNam.csproj.CoreCompileInputs.cache
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\obj\Debug\EcomartVietNam.csproj.CopyComplete
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\obj\Debug\EcomartVietNam.dll
+E:\kỳ cuối\LTWEB\BTL\EcomartVietNam\EcomartVietNam\EcomartVietNam\obj\Debug\EcomartVietNam.pdb

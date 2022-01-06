@@ -1,0 +1,119 @@
+﻿@model EcomartVietNam.Models.Product
+
+@{
+    ViewBag.Title = Model.product_name;
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+
+@section addcss{
+    <link rel="stylesheet" href="~/wwwroot/css/custom/product-detaill.css" />
+}
+
+
+<main class="main-content">
+    @{ Html.RenderAction("_BreadcrumbLevelTwo", "Base", new { id = ViewContext.RouteData.Values["id"].ToString() }); }
+
+    <div class="single-product-area section-space-top-100" style="margin-bottom:50px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-product-img h-100">
+                        <div class="swiper-container single-product-slider">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <a href="@Url.Content("~/wwwroot/assets/images/product/medium-size/" + @Model.product_image)"
+                                       class="single-img gallery-popup" style="margin:0 auto">
+                                        <img class="img-full img-"
+                                             src="@Url.Content("~/wwwroot/assets/images/product/medium-size/" + @Model.product_image)"
+                                             alt="Product Image" style="width:auto; height:auto">
+                                        
+                                    </a>
+                                </div>
+
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-thumb-with-content row">
+                        <div class="col-12 order-lg-1 order-2 pt-10 pt-lg-0">
+                            <div class="single-product-content">
+                                <h2 class="title pb-2">@Model.product_name</h2>
+                                <div class="price-box pb-1">
+                                    <span class="new-price text-danger">Giá: @string.Format("{0:#,##}", Model.product_price) vnđ</span>
+                                </div>
+                                <div class="product-category text-matterhorn pb-2 pt-2">
+                                    <span class="title"><b>Trọng lượng:</b></span>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                @Model.product_weight
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="product-category text-matterhorn pb-2 pt-2">
+                                    <span class="title"><b>Xuất xứ:</b></span>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                @Model.product_source
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="product-category text-matterhorn pb-2 pt-2">
+                                    <span class="title"><b>Mô tả chỉ tiết:</b></span>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                @Model.product_description
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="product-category product-tags text-matterhorn pb-4">
+                                    <span class="title"><b>Tình trạng:</b></span>
+                                    <ul>
+
+                                        @if (Model.product_amount > 0)
+                                        {
+                                            <li style="background: #bac34e; padding: 0px 10px; border-radius: 10px; color: #fff;">
+                                                <a>Còn hàng</a>
+                                            </li>
+                                        }
+                                        else
+                                        {
+                                            <li style="background: #bac34e; padding: 0px 10px; border-radius: 10px; color: #fff;">
+                                                <a>Hết hàng</a>
+                                            </li>
+                                        }
+
+
+                                    </ul>
+                                </div>
+
+                                <ul class="quantity-with-btn pb-7">
+
+
+                                    <button class="product-add btn btn-custom-size lg-size btn-primary btn-secondary-hover rounded-0" onclick="addToCart(@Model.product_id, @Model.product_amount)" title="Add to Cart">
+                                        <i class="pe-7s-shopbag" style="padding-right:10px"></i><span>Thêm vào giỏ hàng</span>
+                                    </button>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</main>

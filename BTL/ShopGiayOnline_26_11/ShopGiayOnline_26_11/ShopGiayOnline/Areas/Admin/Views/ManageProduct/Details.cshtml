@@ -1,0 +1,121 @@
+﻿@model ShopGiayOnline.Models.Product
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+    var ImagePath = "~/wwwroot/product/images/" + Model.product_image;
+}
+
+@section Scripts {
+    <script src="~/Areas/Asset/js/ckeditor.js"></script>
+
+    <script>
+        ClassicEditor.create(document.querySelector(".editor"), {
+            toolbar: {
+                items: [
+                    "heading",
+                    "|",
+                    "bold",
+                    "italic",
+                    "link",
+                    "bulletedList",
+                    "numberedList",
+                    "|",
+                    "outdent",
+                    "indent",
+                    "|",
+                    "imageUpload",
+                    "blockQuote",
+                    "insertTable",
+                    "mediaEmbed",
+                    "undo",
+                    "redo",
+                ],
+            },
+            language: "vi",
+            licenseKey: "",
+        })
+            .then((editor) => {
+                window.editor = editor;
+            })
+            .catch((error) => {
+                console.error("Oops, something went wrong!");
+                console.error(
+                    "Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:"
+                );
+                console.warn("Build id: 6gev7fkzarkd-nohdljl880ze");
+                console.error(error);
+            });
+    </script>
+}
+<div class="content container-fluid">
+    <div class="row">
+        <div class="col-xl-8 offset-xl-2">
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="page-title">Xem chi tiết sản phẩm @Model.product_name</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- /Page Header -->
+
+            <div class="card">
+                <div class="card-body">
+                    <!-- Form -->
+                    <form method="post">
+
+                        <div class="form-group">
+                            <label>Mã sản phẩm: </label>
+                            @Html.DisplayFor(model => model.product_id, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                        <div class="form-group">
+                            <label>Tên sản phẩm: </label>
+                            @Html.DisplayFor(model => model.product_name, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4">Ảnh đại diện: </label>
+                            <img id="output" class="img-rounded" width="200" height="200" src="@Url.Content(@ImagePath)" alt="Ảnh" />
+                        </div>
+                        <div class="form-group">
+                            <label>Giá bán: </label>
+                            @Html.DisplayFor(model => model.product_price, new { htmlAttributes = new { @class = "form-control" } }) VNĐ
+                        </div>
+                        <div class="form-group">
+                            <label>Nguồn hàng: </label>
+                            @Html.DisplayFor(model => model.product_height, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                        <div class="form-group">
+                            <label>Trọng lượng: </label>
+                            @Html.DisplayFor(model => model.product_type, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                        <div class="form-group">
+                            <label>Số lượng: </label>
+                            @Html.DisplayFor(model => model.product_amount, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                        <div class="form-group">
+                            <label>Danh mục: </label>
+                            @Html.DisplayFor(model => model.Category.category_name, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                        <div class="form-group">
+                            <label>Mô tả: </label>
+                            <br />
+                            @*<div class="centered">
+                                    <div class="editor-container">
+                                        <div class="editor"></div>
+                                    </div>
+                                </div>*@
+                            @Html.DisplayFor(model => model.product_description, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="@Url.Action("Index","ManageProduct")" class="btn btn-link">Quay lại</a>
+                        </div>
+                    </form>
+                    <!-- /Form -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

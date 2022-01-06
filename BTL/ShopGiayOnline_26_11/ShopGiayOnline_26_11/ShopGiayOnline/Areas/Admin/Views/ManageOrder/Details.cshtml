@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content container-fluid">
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="row">
+            <div class="col">
+                <h3 class="page-title">Chi tiết đơn hàng #@ViewBag.Order.order_id</h3>
+            </div>
+            <div class="col-auto">
+                <a class="btn btn-primary ml-3" onclick="window.print()">
+                    <i class="fas fa-print"></i> In hoá đơn
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /Page Header -->
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <p><b>Người mua: </b> <span>@ViewBag.User.full_name</span></p>
+                            <p><b>Địa chỉ: </b> <span>@ViewBag.User.address</span></p>
+                            <p><b>Số điện thoại: </b> <span>@ViewBag.User.phone_number</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p><b>Mã đơn hàng: </b> <span>@ViewBag.Order.order_id</span></p>
+                            <p><b>Ngày tạo: </b> <span>@ViewBag.Order.created_at</span></p>
+                            <p><b>Trạng thái: </b> <span>@ViewBag.Status</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-center mb-0">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Tổng tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @for (int i = 0; i < @ViewBag.Products.Count; i++)
+                                {
+                                    <tr>
+                                        <td>@ViewBag.Products[i].product_id</td>
+                                        <td>
+                                            @{ var ImagePath = "~/wwwroot/product/images/" + @ViewBag.ProductInfo[i].product_image;}
+                                            <img class="rounded service-img mr-1"
+                                                 src="@Url.Content(@ImagePath)"
+                                                 alt="" />
+                                            @ViewBag.ProductInfo[i].product_name
+                                        </td>
+                                        <td>@string.Format("{0:#,##}", ViewBag.Products[i].price) vnđ</td>
+                                        <td>@ViewBag.Products[i].quantity</td>
+                                        <td>@string.Format("{0:#,##}", ViewBag.Products[i].price * @ViewBag.Products[i].quantity) vnđ</td>
+                                    </tr>
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-9"></div>
+                        <div class="col-md-3">
+                            <p><b>Thành tiền: </b> <span>@ViewBag.Total</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

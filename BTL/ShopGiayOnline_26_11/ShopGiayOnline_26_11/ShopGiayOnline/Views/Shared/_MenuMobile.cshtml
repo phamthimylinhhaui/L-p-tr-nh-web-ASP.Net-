@@ -1,0 +1,153 @@
+﻿
+@model IEnumerable<ShopGiayOnline.Models.Category>
+
+<style>
+    .header-right {
+        min-width: 0px;
+    }
+
+    .header-right > ul {
+        justify-content: space-between;
+    }
+    ul.dropdown-wrap.justify-content-center.text-silver {
+        background: #2b2828;
+        padding: 20px;
+    }
+
+    .dropdown-wrap li .ht-btn:after {
+        display: none;
+    }
+    .offcanvas-search_wrapper .harmic-offcanvas-body .offcanvas-search{
+        justify-content:flex-start;
+    }
+    .main-header.header-sticky.sticky {
+        top: 94px;
+    }
+
+</style>
+<div class="mobile-menu_wrapper" id="mobileMenu">
+    <div class="harmic-offcanvas-body">
+        <div class="inner-body">
+
+            <div class="harmic-offcanvas-top">
+                <a href="#" class="button-close"><i class="pe-7s-close"></i></a>
+            </div>
+
+            <div class="offcanvas-user-info text-center px-6 pb-5">
+               
+                <ul class="dropdown-wrap justify-content-center text-silver">
+                    
+                   
+                    <li class="dropdown dropup">
+                        @if (ViewBag.User == null)
+                        {
+                            <a class="btn btn-link  ht-btn p-0" href="@Url.Action("Login","Profile")">
+                                <i class="pe-7s-users"></i>
+                                <span style=" color: #797676; padding-left: 7px; font-size: 16px; padding-top: 3px;">Đăng nhập </span>
+                            </a>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Index","Profile")" class="btn btn-link dropdown-toggle ht-btn p-0" type="button"
+                               id="settingButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="pe-7s-users"></i>
+                                <span style=" color: #797676; padding-left: 7px; font-size: 16px; padding-top: 3px;">@ViewBag.User </span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="settingButton">
+                                <li><a class="dropdown-item" href="@Url.Action("Logout","Profile")">Thoát</a></li>
+
+                            </ul>
+
+                        }
+
+
+
+
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="offcanvas-menu_area">
+                <nav class="offcanvas-navigation">
+                    <ul class="mobile-menu">
+                        <li class="menu-item-has-children">
+                            <a href="@Url.Action("Index","Home")">
+                                <i class="pe-7s-home" style="font-size:20px"></i>
+                                Home
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="mm-text">Giới thiệu</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                            <a href="#">
+                                <span class="mm-text">
+                                    Danh mục sản phẩm
+                                    <i class="pe-7s-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+
+                                @foreach (var item in Model)
+                                {
+                                    <li>
+                                        <a href="@Url.Action("Detail","Category", new { id = item.category_id })">
+                                            
+                                            <span class="mm-text"> @item.category_name</span>
+
+</a>
+                                    </li>
+                                }
+                                
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Khuyến mãi</a>
+                        </li>
+                        <li>
+                            <a href="#">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="#">Hình ảnh</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Liên hệ</a>
+                        </li>
+                        <li style="padding-left:70px">
+                            <a href="#" style="color:red; font-weight:bold">Hotline: 038.464.0190</a>
+                        </li>
+                       
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offcanvas-search_wrapper" id="searchBar">
+    <div class="harmic-offcanvas-body">
+        <div class="container h-100">
+            <div class="offcanvas-search">
+                <div class="harmic-offcanvas-top">
+                    <a href="#" class="button-close"><i class="pe-7s-close"></i></a>
+                </div>
+                <span class="searchbox-info">Nhập từ bạn muốn tìm và nhấn Enter</span>
+                @*<form onsubmit="onSearch()" >*@
+                <div class="hm-searchbox">
+                    <input type="text" placeholder="Tìm kiếm.....">
+                    <button class="search-btn" type="submit"  onclick="onSearch()"><i class="pe-7s-search"></i></button>
+                </div>
+                @*</form>*@
+
+                
+
+
+            </div>
+        </div>
+    </div>
+</div>

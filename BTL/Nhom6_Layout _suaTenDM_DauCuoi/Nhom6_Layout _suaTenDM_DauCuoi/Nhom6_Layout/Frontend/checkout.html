@@ -1,0 +1,831 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from template.hasthemes.com/harmic/harmic/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Sep 2021 16:27:54 GMT -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vascara - Website bán giày của sinh viên nhóm 2 HAUI</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="wwwroot/assets/images/favicon.ico" />
+
+    <!-- CSS
+    ============================================ -->
+
+
+
+    <!-- Minify Version -->
+    <link rel="stylesheet" href="wwwroot/assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="wwwroot/assets/css/plugins/plugins.min.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="wwwroot/assets/css/style.min.css">
+
+
+    
+    <link href="wwwroot/js/custom/mainnnn.css" rel="stylesheet" />
+
+</head>
+
+<body style="background: #fff">
+   
+
+
+<div class="header-top border-bottom d-none d-md-block" style="padding: 8px 0px;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-8">
+                <div class="header-top-left">
+                    <ul class="dropdown-wrap text-matterhorn">
+                        <li style="margin-right: 50px;">
+                            <i class="pe-7s-map-marker"></i>
+                            Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội
+                        </li>
+                        <li>
+                            <i class="pe-7s-piggy"></i>
+                            <a> Freeship cho đơn hàng từ 500.000đ </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="header-top-right text-matterhorn">
+                    <p class="shipping mb-0">
+                        <i class="pe-7s-alarm"></i>
+                       
+                        Mở cửa và phục vụ khách hàng 24/24h
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header-middle py-5  header-sticky">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <div class="header-middle-wrap">
+                    <a href="index.html" class="header-logo">
+                        <img src="wwwroot/assets/images/logo/vascra.png" alt="Header Logo">
+                    </a>
+                    <div class="header-search-area d-none d-lg-block" style="width:630px">
+
+                        
+                        <div  class="header-searchbox">
+
+                            <input class="input-field" type="text" placeholder="Nhập sản phầm tìm kiếm"  id="keyword">
+                            <button class="btn btn-outline-whisper btn-primary-hover" type="submit"  onclick="onSearch()">
+                                <i class="pe-7s-search"></i>
+                            </button>
+                        </div>
+                        
+
+                       
+
+                    </div>
+                    <div class="header-right">
+                        <ul>
+                            <li class="dropdown d-none d-md-block">
+
+                                    <a href="login.html" class="btn btn-link dropdown-toggle ht-btn p-0">
+                                        <i class="pe-7s-users"> </i>
+                                        <span style=" color: #797676; padding-left: 7px; font-size: 16px; padding-top: 3px;">Đăng nhập </span>
+                                    </a>
+
+
+
+                            </li>
+
+                            <li class="d-block d-lg-none" style="padding-top:6px">
+                                <a href="#searchBar" class="search-btn toolbar-btn">
+                                    <i class="pe-7s-search"></i>
+                                </a>
+                            </li>
+                            <li class="minicart-wrap me-3 me-lg-0">
+
+                                <a title="Cartlist" href="checkout.html" class="minicart-btn ">
+                                    <i class="pe-7s-shopbag"></i>
+                                    <span  style="position: absolute; color: #e87474; left: 46px; font-weight: 600; top: -5px; font-size: 14px; ">Tổng:</span>
+                                    <sup id="hdk-count" class="quantity" > 0 vnđ</sup>
+
+                                </a>
+                                <p class="dieuchinhcsscart">
+                                    <small id="total-amount" style="font-weight:600">0</small>
+                                </p>
+
+
+
+                            </li>
+                            <li class="mobile-menu_wrap d-block d-lg-none">
+                                <a href="#mobileMenu" class="mobile-menu_btn toolbar-btn pl-0">
+                                    <i class="pe-7s-menu"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const onSearch = () => {
+        const keyword = document.getElementById("keyword").value;
+
+        window.location = `/Product/Search?keyword=${keyword}`;
+    }
+</script>
+
+
+    <!-- Start menu pc -->
+  <div class="main-header " style="border-top: 1px solid #f15c68; border-bottom: 1px solid #f15c68;">
+        <div class="container">
+            <div class="main-header_nav position-relative">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 d-none d-lg-block">
+                        <div class="main-menu">
+                            <nav class="main-nav">
+                                <ul style="justify-content:left">
+                                    <li class="drop-holder">
+                                        <a href="index.html">
+                                            <i class="pe-7s-home" style="font-size:20px"></i>
+
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="Category.html">Giày Cao gót</a></li>
+                                   
+
+                                     <li>
+                                        <a href="Category.html">Giày Sandals</a></li>
+                                   
+
+                                     <li>
+                                        <a href="Category.html">Giày Sneaker</a></li>
+                                   
+                                    
+                                    
+                                     <li>
+                                        <a href="Category.html">Giày Boots</a></li>
+                                   
+
+                                    <li>
+                                        <a href="Category.html">Giày da thật</a></li>
+
+                                   <li>
+                                        <a href="Category.html">Giày Lười</a></li>
+                                   
+                                    
+                                </ul> 
+                                
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End menu pc -->
+    <!-- Start menu mobile -->
+
+<style>
+    .header-right {
+        min-width: 0px;
+    }
+
+    .header-right > ul {
+        justify-content: space-between;
+    }
+    ul.dropdown-wrap.justify-content-center.text-silver {
+        background: #2b2828;
+        padding: 20px;
+    }
+
+    .dropdown-wrap li .ht-btn:after {
+        display: none;
+    }
+    .offcanvas-search_wrapper .harmic-offcanvas-body .offcanvas-search{
+        justify-content:flex-start;
+    }
+    .main-header.header-sticky.sticky {
+        top: 94px;
+    }
+
+</style>
+<div class="mobile-menu_wrapper" id="mobileMenu">
+    <div class="harmic-offcanvas-body">
+        <div class="inner-body">
+
+            <div class="harmic-offcanvas-top">
+                <a href="#" class="button-close"><i class="pe-7s-close"></i></a>
+            </div>
+
+            <div class="offcanvas-user-info text-center px-6 pb-5">
+               
+                <ul class="dropdown-wrap justify-content-center text-silver">
+                    
+                   
+                    <li class="dropdown dropup">
+                            <a class="btn btn-link  ht-btn p-0" href="login.html">
+                                <i class="pe-7s-users"></i>
+                                <span style=" color: #797676; padding-left: 7px; font-size: 16px; padding-top: 3px;">Đăng nhập </span>
+                            </a>
+
+
+
+
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="offcanvas-menu_area">
+                <nav class="offcanvas-navigation">
+                    <ul class="mobile-menu">
+                        <li class="menu-item-has-children">
+                            <a href="/">
+                                <i class="pe-7s-home" style="font-size:20px"></i>
+                                Home
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="mm-text">Giới thiệu</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                            <a href="#">
+                                <span class="mm-text">
+                                    Danh mục sản phẩm
+                                    <i class="pe-7s-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+
+                                    <li>
+                                        <a href="category.html">
+                                            
+                                            <span class="mm-text">Danh mục 1</span>
+
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="category.html">
+                                            
+                                            <span class="mm-text">Danh mục 2</span>
+
+                                        </a>
+                                    </li>
+
+                                     <li>
+                                        <a href="category.html">
+                                            
+                                            <span class="mm-text">Danh mục 3</span>
+
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="category.html">
+                                            
+                                            <span class="mm-text">Danh mục 4</span>
+
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="category.html">
+                                            
+                                            <span class="mm-text">Danh mục 5</span>
+
+                                        </a>
+                                    </li>
+                                    
+                                
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Khuyến mãi</a>
+                        </li>
+                        <li>
+                            <a href="#">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="#">Hình ảnh</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Liên hệ</a>
+                        </li>
+                        <li style="padding-left:70px">
+                            <a href="#" style="color:red; font-weight:bold">Hotline: 038.464.0190</a>
+                        </li>
+                       
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offcanvas-search_wrapper" id="searchBar">
+    <div class="harmic-offcanvas-body">
+        <div class="container h-100">
+            <div class="offcanvas-search">
+                <div class="harmic-offcanvas-top">
+                    <a href="#" class="button-close"><i class="pe-7s-close"></i></a>
+                </div>
+                <span class="searchbox-info">Nhập từ bạn muốn tìm và nhấn Enter</span>
+                
+                <div class="hm-searchbox">
+                    <input type="text" placeholder="Tìm kiếm.....">
+                    <button class="search-btn" type="submit"  onclick="onSearch()"><i class="pe-7s-search"></i></button>
+                </div>
+                
+
+                
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- End menu mobile -->
+
+<link rel="stylesheet" href="wwwroot/assets/fonts/icofont/icofont.min.css">
+
+<main class="main-content">
+   
+    <div class="breadcrumb-area breadcrumb-height" data-bg-image="https://theme.hstatic.net/1000317997/1000499273/14/ms_banner_img1.jpg?v=198">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-item">
+                        <div class="main-breadcrum">
+                            <h2 class="breadcrumb-heading">Thanh toán</h2>
+                            <ul style="text-align:center">
+                                <li>
+                                    <a href="/">Trang chủ <i class="pe-7s-angle-right"></i></a>
+                                </li>
+                                <li>Thanh toán</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="inner-section checkout-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 alert-info" style="border-top: 3px solid #f26974 !important;">
+                    <div class="account-card">
+                        <div class="account-title">
+                            <h4>Đơn hàng của bạn</h4>
+                            <a onclick="clearCart()" href="/Checkout" style="color: #f15b67 ; border: 2px solid #f15b67; background: transparent;">Xoá giỏ hàng</a>
+                        </div>
+                        <div class="account-content"  id="cart">
+                            <div class="table-scroll">
+                                <table class="table-list">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">STT</th>
+                                            <th scope="col">Ảnh</th>
+                                            <th scope="col">Tên</th>
+                                            <th scope="col">Giá</th>
+                                            <th scope="col">Số lượng</th>
+                                            <th scope="col">Hành động</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="list-product-cart">
+                                        <tr>
+                                            <td class="table-serial">
+                                                <h6>1</h6>
+                                            </td>
+                                            <td class="table-image"><img src="https://www.vascara.com/uploads/cms_productmedia/2021/June/30/giay-sneaker-vien-chi-noi-thoi-trang-snk-0042-mau-trang-5__60485__1625071843-medium@2x.jpg?1" alt="product"></td>
+                                            <td class="table-name">
+                                                <h6>Sản phẩm số 1</h6>
+                                            </td>
+                                            <td class="table-price">
+                                                <h6>70,500 vnđ</h6>
+                                            </td>
+                                            <td class="table-quantity">
+                                                <div class="cart-action-group" style="justify-content: center">
+                                                    <div class="product-action">
+                                                        <button class="action-minus" onclick="minus(20)" title="Giảm">
+                                                            <i class="icofont-minus"></i>
+                                                        </button>
+                                                            <input class="action-input" style="text-align:right;" title="Số lượng" id="qty20" type="number" readonly="" name="quantity" value="1">
+                                                        <button class="action-plus" onclick="plus(20)" title="Tăng">
+                                                            <i class="icofont-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="table-action">
+                                                <a class="view" href="/Product/Detail/20">
+                                                <i class="pe-7s-look"></i></a>
+                                                <a class="trash" href="/Checkout" onclick="deleteInCart(20,70500,1)"><i class="pe-7s-trash"></i></a></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td class="table-serial">
+                                                <h6>2</h6>
+                                            </td>
+                                            <td class="table-image"><img src="https://www.vascara.com/uploads/cms_productmedia/2021/June/30/giay-sneaker-vien-chi-noi-thoi-trang-snk-0042-mau-trang-5__60485__1625071843-medium@2x.jpg?1" alt="product"></td>
+                                            <td class="table-name">
+                                                <h6>Sản phẩm 2</h6>
+                                            </td>
+                                            <td class="table-price">
+                                                <h6>80,000 vnđ</h6>
+                                            </td>
+                                            <td class="table-quantity">
+                                                <div class="cart-action-group" style="justify-content: center">
+                                                    <div class="product-action">
+                                                        <button class="action-minus" onclick="minus(37)" title="Giảm">
+                                                            <i class="icofont-minus"></i>
+                                                        </button>
+                                                            <input class="action-input" style="text-align:right;" title="Số lượng" id="qty37" type="number" readonly="" name="quantity" value="3">
+                                                        <button class="action-plus" onclick="plus(37)" title="Tăng">
+                                                            <i class="icofont-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="table-action">
+                                                <a class="view" href="/Product/Detail/37">
+                                                <i class="pe-7s-look"></i></a>
+                                                <a class="trash" href="/Checkout" onclick="deleteInCart(37,80000,3)"><i class="pe-7s-trash"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="checkout-charge mt-5 mb-3">
+                                <ul>
+                                    <li><span>Tổng tiền: </span><span id="hdk-total">0 vnđ</span></li>
+                                </ul>
+                            </div>
+                            <form action="/Invoice/Index" method="post">
+                                <input hidden id="ids" name="ids" />
+                                <button type="submit" class="checkout-proced btn btn-inline dieuchinhbg">Thanh toán</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+
+
+
+
+
+
+    <!-- Start footer -->
+    <!-- Begin Shipping Area -->
+    <div class="shipping-area " style="padding-bottom:100px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="shipping-item">
+                        <div class="shipping-img">
+                            <img src="https://cuahangdongho.vn/wp-content/uploads/2020/06/xe-tai.png" alt="Shipping Icon">
+                        </div>
+                        <div class="shipping-content">
+                            <h5 class="title">Miễn phí vận chuyển</h5>
+                            <p class="short-desc mb-0">Ưu đãi giao hàng tận nhà miễn phí</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-6 pt-md-0">
+                    <div class="shipping-item">
+                        <div class="shipping-img">
+                            <img src="https://cuahangdongho.vn/wp-content/uploads/2020/06/logo1.png" alt="Shipping Icon">
+                        </div>
+                        <div class="shipping-content">
+                            <h5 class="title">Hỗ trợ trực tuyến</h5>
+                            <p class="short-desc mb-0">Hỗ trợ trực tuyến 24/7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-6 pt-lg-0">
+                    <div class="shipping-item">
+                        <div class="shipping-img">
+                            <img src="https://cuahangdongho.vn/wp-content/uploads/2020/06/the-besst.png" alt="Shipping Icon">
+                        </div>
+                        <div class="shipping-content">
+                            <h5 class="title">Bảo đảm chất lượng</h5>
+                            <p class="short-desc mb-0">Sản phẩm bảo đảm chất lượng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shipping Area End Here -->
+    <!-- Begin Product Area -->
+   
+   
+    <!-- Begin Footer Area -->
+    <div class="footer-area" style="border-top: 2px solid #f15b67;">
+        <div class="footer-top section-space-y-axis-100 text-black" data-bg-color="#fff" style="padding-bottom:30px">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-lg-3 col-md-3">
+                        <div class="widget-item">
+                            <div class="footer-logo pb-4">
+                                <a href="index.html">
+                                    <img src="wwwroot/assets/images/logo/vascra.png" alt="Logo"
+                                        style="max-height:116px">
+                                </a>
+                            </div>
+                            <p class="short-desc mb-2">
+                                <b>Vascara | Thương hiệu thời trang balo túi xách, giày dép, bóp ví nữ đẹp</b>
+                            </p>
+                            <div class="widget-contact-info pb-6">
+                                <ul>
+                                    <li>
+                                        <i class="pe-7s-map-marker"></i>
+                                        Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội
+                                    </li>
+                                    <li>
+                                        <i class="pe-7s-mail"></i>
+                                        <a href="mailto:vascara.com.vn">vascara.com.vn</a>
+                                    </li>
+                                    <li>
+                                        <i class="pe-7s-phone"></i>
+                                        <a href="tel:0384640190">038.464.0190</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-lg-3  col-md-3 pt-10 pt-lg-0">
+                        <div class="widget-item">
+                            <h3 class="widget-title mb-5">Tài khoản</h3>
+                            <ul class="widget-list-item">
+
+                                <li>
+                                    <a href="javascript:void(0)">Đăng Nhập</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Đăng Kí</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"> Đăng Xuất</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"> Giỏ Hàng</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"> Quản lí tài khoản</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3  col-md-3 pt-10 pt-lg-0">
+                        <div class="widget-item">
+                            <h3 class="widget-title mb-5">Danh mục sản phẩm</h3>
+                            <ul class="widget-list-item">
+                               
+                                    <li>
+                                        <a href="Category.html">Giày Cao gót</a>
+                                    </li>
+
+                                     <li>
+                                        <a href="Category.html">giày sandals</a>
+                                    </li>
+
+                                     <li>
+                                        <a href="Category.html">giày Sneaker</a>
+                                    </li>
+                                    
+                                    
+                                     <li>
+                                        <a href="Category.html">Giày Boots</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="Category.html">Giày da thật</a>
+                                    </li>
+                                    <li>
+                                        <a href="Category.html">Giày lười</a>
+                                    </li>
+                                    
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-3 pt-10 pt-lg-0">
+                        <div class="widget-item">
+                            <h3 class="widget-title mb-5">Newsletters</h3>
+                            <p class="short-desc">
+                                <iframe name="f1ebba1d63f9ea8" width="1000px" height="1000px"
+                                    data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin"
+                                    frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                    allow="encrypted-media"
+                                    src="https://www.facebook.com/v4.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1110e43cd6ac88%26domain%3Dgiaynhatchinhhang.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fgiaynhatchinhhang.vn%252Ff313b0f43bf51f%26relation%3Dparent.parent&amp;container_width=270&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgiaynhatxachtaychinhhang%2F%3Fref%3Dbr_rs&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false"
+                                    style="border: none; visibility: visible; width: 270px; height: 130px;"
+                                    class=""></iframe>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom py-3" data-bg-color="#000">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright">
+                            <span class="copyright-text text-white">
+                                © 2021 Vascara Made with <i class="fa fa-heart text-danger"></i> by Nhóm 6 sinh viên HAUI
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Area End Here -->
+    <!-- Begin Scroll To Top -->
+    <a class="scroll-to-top" href="#">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+    <!-- Scroll To Top End Here -->
+    </div>
+    <script src="wwwroot/assets/js/vendor.min.js"></script>
+    <script src="wwwroot/assets/js/plugins.min.js"></script>
+
+    <!--Main JS (Common Activation Codes)-->
+    <script src="wwwroot/assets/js/main.min.js"></script>
+    
+    <script src="wwwroot/js/custom/carttt.js"></script>
+    
+    <script>
+        const fetchProduct = async () => {
+            const productIds = localStorage.getItem("productIds");
+            document.getElementById("ids").value = productIds;
+
+            const ids = productIds?.split(",");
+
+            const response = await fetch(`/Product/List?ids=${ids?.toString()}`);
+            let data = await response.json();
+
+            data = data.map(item => {
+                const count = ids.filter(i => i == item.id).length;
+                const price = formatMoney(item.price.toString());
+                return {
+                    ...item,
+                    price,
+                    currentPrice: item.price,
+                    currentQuantity: count
+                }
+            });
+
+            let element = "";
+            if (data.length) {
+                document.getElementById("cart").style.display = "block";
+                document.getElementById("noti").style.display = "none";
+                data.map((product, index) => {
+                    element +=
+                        `
+                                        <tr>
+                                            <td class="table-serial">
+                                                <h6>${index + 1}</h6>
+                                            </td>
+                                            <td class="table-image"><img src="wwwroot/assets/images/product/medium-size/${product.image}" alt="product"></td>
+                                            <td class="table-name">
+                                                <h6>${product.name}</h6>
+                                            </td>
+                                            <td class="table-price">
+                                                <h6>${product.price} vnđ</h6>
+                                            </td>
+                                            <td class="table-quantity">
+                                                <div class="cart-action-group" style="justify-content: center">
+                                                    <div class="product-action">
+                                                        <button class="action-minus" onclick="minus(${product.id})" title="Giảm">
+                                                            <i class="icofont-minus"></i>
+                                                        </button>
+                                                            <input class="action-input" style="text-align:right;" title="Số lượng" id="qty${product.id}" type="number" readonly name="quantity" value="${product.currentQuantity}">
+                                                        <button class="action-plus" onclick="plus(${product.id})" title="Tăng">
+                                                            <i class="icofont-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="table-action">
+                                                <a class="view" href="/Product/Detail/${product.id}">
+                                                <i class="pe-7s-look"></i></a>
+                                                <a class="trash" href="/Checkout" onclick="deleteInCart(${product.id},${product.currentPrice},${product.currentQuantity})"><i class="pe-7s-trash"></i></a></td>
+                                        </tr>
+                                    `;
+                })
+            }
+
+            document.getElementById("list-product-cart").innerHTML = element;
+            const amount = localStorage.getItem("amount");
+            if (amount)
+                document.getElementById("hdk-total").innerHTML = `${formatMoney(amount)} vnđ`;
+        }
+
+        fetchProduct();
+
+        const deleteInCart = (id, price, quantity) => {
+            const productIds = localStorage.getItem("productIds").split(",");
+
+            const ids = productIds.filter(product => product != id);
+            localStorage.setItem("productIds", ids.toString());
+            let amount = Number(localStorage.getItem("amount"));
+            amount -= Number(price) * Number(quantity);
+            localStorage.setItem("amount", amount);
+            if (amount === 0) {
+                localStorage.removeItem("amount");
+            }
+        }
+
+        const plus = async (id) => {
+            const qty = document.getElementById(`qty${id}`).value;
+            const response = await fetch(`/Product/Index/${id}`);
+            const data = await response.json();
+            if (data !== "NOT_FOUND") {
+                if (data.quantity >= Number(qty) + 1) {
+                    document.getElementById(`qty${id}`).value = Number(qty) + 1;
+                    let productIds = localStorage.getItem("productIds");
+                    productIds += `,${id}`;
+
+                    localStorage.setItem("productIds", productIds);
+                    fetchCart(data, 'plus');
+                    fetchProduct();
+                } else {
+                    toastr.info('Số lượng đã đạt giới hạn', 'Thông báo');
+                }
+            }
+        }
+        const minus = async (id) => {
+            const qty = document.getElementById(`qty${id}`).value;
+            const response = await fetch(`/Product/Index/${id}`);
+            const data = await response.json();
+            if (data !== "NOT_FOUND") {
+                if (Number(qty) - 1 >= 1) {
+                    document.getElementById(`qty${id}`).value = Number(qty) - 1;
+                    let productIds = localStorage.getItem("productIds").split(",");
+                    const index = productIds.indexOf(id.toString());
+                    if (index > -1) {
+                        productIds.splice(index, 1);
+                    }
+
+                    localStorage.setItem("productIds", productIds.toString());
+                    fetchCart(data, 'minus')
+                    fetchProduct();
+                }
+                if (Number(qty) - 1 === 0) {
+                    deleteInCart(id, data.price, 1);
+                    window.location = '/Checkout';
+                }
+            }
+        }
+
+        const clearCart = () => {
+            localStorage.removeItem("productIds");
+            localStorage.removeItem("amount");
+            window.location.reload();
+        }
+    </script>
+
+</body>
+
+</html>

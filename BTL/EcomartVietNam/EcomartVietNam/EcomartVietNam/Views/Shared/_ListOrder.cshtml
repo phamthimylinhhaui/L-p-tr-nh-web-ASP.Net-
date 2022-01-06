@@ -1,0 +1,48 @@
+﻿
+@model IEnumerable<EcomartVietNam.Models.Custom_order>
+
+<div class="table-responsive">
+    @if (Model != null)
+    {
+        <table class="table table-bordered table-hover">
+            <tbody>
+                <tr>
+                    <th scope="col">Mã đơn</th>
+                    <th scope="col">Tổng tiền</th>
+                    <th scope="col">Ngày tạo</th>
+                    <th scope="col">Trạng thái</th>
+                    <th scope="col">Hành động</th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td> <h6>@item.order_id</h6></td>
+
+
+                        <td><h6>@string.Format("{0:#,##}", item.amount) vnđ</h6></td>
+
+
+                        <td><h6>@item.created_at</h6></td>
+
+
+                        <td> <h6>@item.status</h6></td>
+
+
+                        <td>
+                            <a class="view" href="/Invoice/Index/@item.order_id">
+                                <i class="pe-7s-info"></i> <span style="color: #198754">Chi tiết</span>
+                            </a>
+
+                        </td>
+                    </tr>
+                }
+                </tbody>
+        </table>
+    }
+    else
+    {
+        <h1 class="text-center">Chưa có đơn hàng</h1>
+    }
+</div>
+
+
