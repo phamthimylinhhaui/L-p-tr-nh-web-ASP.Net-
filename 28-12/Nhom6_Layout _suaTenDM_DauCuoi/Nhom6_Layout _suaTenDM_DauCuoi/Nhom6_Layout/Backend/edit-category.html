@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from truelysell-admin.dreamguystech.com/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Jun 2021 14:21:50 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <title>Hệ thống quản trị Vascara</title>
+
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="Asset/favicon.ico" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="Asset/plugins/bootstrap/css/bootstrap.min.css" />
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet"
+          href="Asset/plugins/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="Asset/plugins/fontawesome/css/all.min.css" />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="Asset/css/animate.min.css" />
+
+    <!-- Select CSS -->
+    <link rel="stylesheet" href="Asset/css/select2.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="Asset/css/admin.css" />
+    <link href="Asset/css/toastr.css" rel="stylesheet" />
+    
+    
+
+
+</head>
+
+<body>
+   <div class="main-wrapper">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <a href="dashboard.html" class="logo logo-small">
+                    <img src="Asset/logo.png"
+                         alt="Logo"
+                         width="30"
+                         height="30" />
+                </a>
+            </div>
+            <a href="javascript:void(0);" id="toggle_btn">
+                <i class="fas fa-align-left"></i>
+            </a>
+            <a class="mobile_btn" id="mobile_btn" href="javascript:void(0);">
+                <i class="fas fa-align-left"></i>
+            </a>
+
+            <ul class="nav user-menu">
+                <!-- User Menu -->
+                <li class="nav-item dropdown">
+                    <a href="javascript:void(0)"
+                       class="dropdown-toggle user-link nav-link"
+                       data-toggle="dropdown">
+                        <span class="user-img">
+                            <img class="rounded-circle"
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdeeVu5CWReDBpxNGN9QHVsVT6l33OLK4mIfcy6L-obDRXBxgGiSu3w44JIfj-MU9eu3Y&usqp=CAU"
+                                 width="40"
+                                 alt="Admin" />
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="index.html">Đăng xuất</a>
+                    </div>
+                </li>
+                <!-- /User Menu -->
+            </ul>
+        </div>
+        <!-- /Header -->
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <a href="dashboard.html">
+                    <img src="Asset/vascra.png" style="margin-bottom:20px"
+                         class="img-fluid"
+                         alt="" />
+                </a>
+            </div>
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="active">
+                            <a href="dashboard.html"><i class="fas fa-columns"></i> <span>Thống kê</span></a>
+                        </li>
+                        <li class="">
+                            <a href="categories.html">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Quản lý danh mục</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="products.html">
+                                <i class="fab fa-buffer"></i>
+                                <span>Quản lý sản phẩm</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="manage-order.html">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Quản lý đơn hàng</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="account.html">
+                                <i class="fas fa-user"></i>
+                                <span>Quản lý tài khoản </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /Sidebar -->
+
+        <div class="page-wrapper">
+            
+
+<div class="content container-fluid">
+    <div class="row">
+        <div class="col-xl-8 offset-xl-2">
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="page-title">Chỉnh sửa danh mục</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- /Page Header -->
+
+            <div class="card">
+                <div class="card-body">
+                    <!-- Form -->
+                    <form method="post" action="/admin/ManageCategory/Update">
+                        <input name="__RequestVerificationToken" type="hidden" value="1az7HhThGpJ3r90anwj-gOFiiydyyN9MCdHm2TALFJ4I5e_v3BPvecs4pv1jXllnJ-ebVxx1tgU2-kbMtvBadN-5-AvTqG0Xr0hXv1weJAU1" />
+                        <div class="form-group">
+                            <label>Mã danh mục</label>
+                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field category_id must be a number." data-val-required="The category_id field is required." id="category_id" name="category_id" readonly="readonly" type="number" value="1" />
+                            <label>Tên danh mục</label>
+                            <input class="form-control text-box single-line" data-val="true" data-val-length="The field category_name must be a string with a maximum length of 100." data-val-length-max="100" data-val-required="Tên danh mục không được để trống" id="category_name" name="category_name" type="text" value="Thịt cá trứng" />
+                            <span class="field-validation-valid text-danger" data-valmsg-for="category_name" data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="mt-4">
+                            <button class="btn btn-primary" type="submit">
+                                Cập nhật
+                            </button>
+                            <a href="/admin/ManageCategory" class="btn btn-link">Huỷ</a>
+                        </div>
+                    </form>
+                    <!-- /Form -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="Asset/js/jquery-3.5.0.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="Asset/js/popper.min.js"></script>
+    <script src="Asset/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Datepicker Core JS -->
+    <script src="Asset/js/moment.min.js"></script>
+    <script src="Asset/js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- Datatables JS -->
+    <script src="Asset/plugins/datatables/datatable.min.js"></script>
+
+    <!-- Slimscroll JS -->
+    <script src="Asset/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="Asset/js/bootstrapValidator.min.html"></script>
+
+    <!-- Select2 JS -->
+    <script src="Asset/js/select2.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="Asset/js/admin.js"></script>
+    <script src="Asset/js/toastr.js"></script>
+
+
+    
+    <script src="/bundles/jqueryval"></script>
+
+
+
+</body>
+
+<!-- Mirrored from truelysell-admin.dreamguystech.com/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Jun 2021 14:22:07 GMT -->
+</html>
+

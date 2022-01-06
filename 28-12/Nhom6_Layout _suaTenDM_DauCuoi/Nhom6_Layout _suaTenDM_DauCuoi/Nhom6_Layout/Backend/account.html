@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from truelysell-admin.dreamguystech.com/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Jun 2021 14:21:50 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <title>Hệ thống quản trị Vascara</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="Asset/favicon.ico" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="Asset/plugins/bootstrap/css/bootstrap.min.css" />
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet"
+          href="Asset/plugins/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="Asset/plugins/fontawesome/css/all.min.css" />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="Asset/css/animate.min.css" />
+
+    <!-- Select CSS -->
+    <link rel="stylesheet" href="Asset/css/select2.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="Asset/css/admin.css" />
+    <link href="Asset/css/toastr.css" rel="stylesheet" />
+    
+    
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="Asset/css/bootstrap-datetimepicker.min.css" />
+
+    <!-- Datatables CSS -->
+    <link rel="stylesheet"
+          href="Asset/plugins/datatables/datatables.min.css" />
+
+
+
+</head>
+
+<body>
+   <div class="main-wrapper">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <a href="dashboard.html" class="logo logo-small">
+                    <img src="Asset/logo.png"
+                         alt="Logo"
+                         width="30"
+                         height="30" />
+                </a>
+            </div>
+            <a href="javascript:void(0);" id="toggle_btn">
+                <i class="fas fa-align-left"></i>
+            </a>
+            <a class="mobile_btn" id="mobile_btn" href="javascript:void(0);">
+                <i class="fas fa-align-left"></i>
+            </a>
+
+            <ul class="nav user-menu">
+                <!-- User Menu -->
+                <li class="nav-item dropdown">
+                    <a href="javascript:void(0)"
+                       class="dropdown-toggle user-link nav-link"
+                       data-toggle="dropdown">
+                        <span class="user-img">
+                            <img class="rounded-circle"
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdeeVu5CWReDBpxNGN9QHVsVT6l33OLK4mIfcy6L-obDRXBxgGiSu3w44JIfj-MU9eu3Y&usqp=CAU"
+                                 width="40"
+                                 alt="Admin" />
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="index.html">Đăng xuất</a>
+                    </div>
+                </li>
+                <!-- /User Menu -->
+            </ul>
+        </div>
+        <!-- /Header -->
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <a href="dashboard.html">
+                    <img src="Asset/vascra.png" style="margin-bottom:20px"
+                         class="img-fluid"
+                         alt="" />
+                </a>
+            </div>
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="active">
+                            <a href="dashboard.html"><i class="fas fa-columns"></i> <span>Thống kê</span></a>
+                        </li>
+                        <li class="">
+                            <a href="categories.html">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Quản lý danh mục</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="products.html">
+                                <i class="fab fa-buffer"></i>
+                                <span>Quản lý sản phẩm</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="manage-order.html">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Quản lý đơn hàng</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="account.html">
+                                <i class="fas fa-user"></i>
+                                <span>Quản lý tài khoản </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /Sidebar -->
+
+        <div class="page-wrapper">
+            
+
+<div class="content container-fluid">
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="row">
+            <div class="col">
+                <h3 class="page-title">Quản lý tài khoản</h3>
+            </div>
+            <div class="col-auto text-right">
+                <a href="/admin/ManageAccount/Create"
+                   class="btn btn-primary ml-3">
+                    <i class="fas fa-plus"></i> Thêm tài khoản
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /Page Header -->
+    <!-- Start alert -->
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div style="display: none" id="deletee" class="alert alert-danger text-center" role="alert"></div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <!-- End alert -->
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-center mb-0 datatable">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Tên</th>
+                                    <th>Email</th>
+                                    <th>SĐT</th>
+                                    
+                                    <th>Địa chỉ</th>
+                                    <th>Trạng thái</th>
+                                    <th>Quyền</th>
+                                    
+                                    <th class="text-right">Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Họ Và Tên</td>
+                                    <td><a href="mailto:nhom2user@gmail.com">Email.com.vn</a></td>
+                                    <td>0866136920</td>
+                                    
+                                    <td>Địa chỉ</td>
+                                    <td><label>Đã kích hoạt</label></td>
+                                    <td><label>Người dùng</label></td>
+                                    
+                                    <td class="text-right">
+                                        <a href="/admin/ManageAccount/Update?id=2"
+                                           class="btn btn-sm bg-success-light mr-2">
+                                            <i class="far fa-edit mr-1"></i> Sửa
+                                        </a>
+                                        <a data-id="40"
+                                           href="javascript:void(0);"
+                                           class="
+                                                    btn btn-sm
+                                                    bg-danger-light
+                                                    mr-2
+                                                    delete_review_comment
+                                                  "
+                                           data-toggle="modal"
+                                           data-target="#model-2">
+                                            <i class="far fa-trash-alt mr-1"></i> Xoá
+                                        </a>
+                                    </td>
+                                </tr>
+                                
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+    <div class="modal fade"
+         id="model-2"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Xác nhận?</h5>
+                    <button type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">Bạn có muốn xoá bản ghi này?</div>
+                <div class="modal-footer">
+                    <button type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal">
+                        Không
+                    </button>
+                    <button onclick="handleDelete(2, `nhom2user@gmail.com`)" type="button" class="btn btn-primary">Đồng ý</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+<script>
+    const handleDelete = async (id, name) => {
+
+        const response = await fetch(`/admin/ManageAccount/Delete?id=${id}`, {
+            method: 'POST',
+        });
+
+        const data = await response.json();
+
+        if (data) {
+            window.location.reload();
+        } else {
+            $(`#model-${id}`).modal("hide");
+            toastr.error('Lỗi khi xoá tài khoản', 'Lỗi')
+        }
+    }
+</script>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="Asset/js/jquery-3.5.0.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="Asset/js/popper.min.js"></script>
+    <script src="Asset/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Datepicker Core JS -->
+    <script src="Asset/js/moment.min.js"></script>
+    <script src="Asset/js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- Datatables JS -->
+    <script src="Asset/plugins/datatables/datatable.min.js"></script>
+
+    <!-- Slimscroll JS -->
+    <script src="Asset/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="Asset/js/bootstrapValidator.min.html"></script>
+
+    <!-- Select2 JS -->
+    <script src="Asset/js/select2.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="Asset/js/admin.js"></script>
+    <script src="Asset/js/toastr.js"></script>
+
+
+    
+
+</body>
+
+<!-- Mirrored from truelysell-admin.dreamguystech.com/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Jun 2021 14:22:07 GMT -->
+</html>
+
