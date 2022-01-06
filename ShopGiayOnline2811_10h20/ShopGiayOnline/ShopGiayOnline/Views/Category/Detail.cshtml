@@ -1,0 +1,121 @@
+﻿@model PagedList.IPagedList<ShopGiayOnline.Models.Product>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = ViewBag.Category;
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+
+
+@{ Html.RenderAction("_BreadcrumbLevelOne", "Base", new { id = ViewContext.RouteData.Values["id"].ToString() }); }
+
+
+
+
+<style>
+    .widgets-searchbox .input-field {
+        margin-bottom: 30px;
+        height: 45px;
+        padding-right: 0px;
+    }
+
+    .nice-select.form-select.filter-select.wide.rounded-0 {
+        border: 1px solid #201d1d1f;
+    }
+
+    .nice-select:after {
+        display: none;
+    }
+
+    .product-item {
+        box-shadow: 0px 0px 2px 1px rgb(244 122 132 / 56%);
+        border-radius: 10px;
+    }
+
+
+    button.shop-widget-btn {
+        background: #ffff;
+        border: 1px solid;
+        padding: 5px 20px;
+        border-radius: 10px;
+        color: #bac34e;
+    }
+</style>
+<div class="shop-area section-space-y-axis-100">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-lg-12 order-lg-2 order-1">
+
+                <div class="tab-content text-charcoal pt-8">
+                    <div class="tab-pane fade show active" id="list-view" role="tabpanel"
+                         aria-labelledby="list-view-tab">
+                        <div class="product-grid-view row">
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-lg-3 col-sm-4 pt-6">
+                                    <div class="product-item">
+                                        <div class="product-img img-zoom-effect">
+                                            <a href="@Url.Action("Detail", "Product", new { id = item.product_id }) ">
+                                                <img src="@Url.Content("~/wwwroot/product/images/" + item.product_image)"
+                                                     alt="product" class="img-full" />
+                                            </a>
+                                            <div class="product-add-action">
+                                                <ul>
+                                                    <li>
+                                                        <a onclick="addToCart(@item.product_id, @item.product_amount)" title="Thêm vào giỏ">
+                                                            <i class="pe-7s-cart"></i>
+                                                        </a>
+
+                                                    </li>
+                                                    <li>
+                                                        <a href="@Url.Action("Detail", "Product", new { id = item.product_id }) ">
+                                                            <i class="pe-7s-look"></i>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <a class="product-name main-color-vascara" href="@Url.Action("Detail", "Product", new { id = item.product_id }) " style="color:#000">@item.product_name</a>
+
+                                            <div class="price-box pb-1">
+                                                <span class="new-price">@string.Format("{0:#,##}", item.product_price) vnđ</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <input value="@ViewBag.order" id="viewbag" hidden="hidden" />
+                <div class="pagination-area pt-10">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <div class="pagination-container">
+                                <ul class="pagination">
+                                    @Html.PagedListPager(Model, page => Url.Action("Detail", new
+                               {
+                                   page = page,
+                                   fromPrice = ViewBag.from,
+                                   toPrice = ViewBag.to,
+                                   order = ViewBag.order
+                               }), new PagedListRenderOptions()
+                               {
+                                   LiElementClasses = new string[] { "page-item", "page-link" }
+                               })
+
+                                </ul>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<script src="/Scripts/filterrr.js"></script>

@@ -1,0 +1,55 @@
+﻿@model ShopGiayOnline.Models.Category
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content container-fluid">
+    <div class="row">
+        <div class="col-xl-8 offset-xl-2">
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="page-title">Thêm danh mục</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- /Page Header -->
+
+            <div class="card">
+                <div class="card-body">
+                    <!-- Form -->
+                    <form method="post" action="@Url.Action("Create","ManageCategory")">
+                        @Html.AntiForgeryToken()
+                        <div class="form-group">
+                            <label>Tên danh mục</label>
+                            @Html.EditorFor(model => model.category_name, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.category_name, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="mt-4">
+                            <button class="btn btn-primary" type="submit">
+                                Thêm
+                            </button>
+                            <a href="@Url.Action("Index","ManageCategory")" class="btn btn-link">Huỷ</a>
+                        </div>
+                    </form>
+                    <!-- Form -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@if (ViewBag.Error != null)
+{
+    <br />
+    <div class="alert alert-danger" role="alert">@ViewBag.Error</div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>

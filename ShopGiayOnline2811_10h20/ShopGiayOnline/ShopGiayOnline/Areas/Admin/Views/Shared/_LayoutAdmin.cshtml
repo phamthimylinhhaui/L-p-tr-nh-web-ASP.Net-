@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from truelysell-admin.dreamguystech.com/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Jun 2021 14:21:50 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <title>Shop giày Vascara</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="~/Areas/Asset/img/favicon.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="~/Areas/Asset/plugins/bootstrap/css/bootstrap.min.css" />
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet"
+          href="~/Areas/Asset/plugins/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="~/Areas/Asset/plugins/fontawesome/css/all.min.css" />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="~/Areas/Asset/css/animate.min.css" />
+
+    <!-- Select CSS -->
+    <link rel="stylesheet" href="~/Areas/Asset/css/select2.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="~/Areas/Asset/css/admin.css" />
+    <link href="~/Areas/Asset/css/toastr.css" rel="stylesheet" />
+    
+    @RenderSection("addcss",required:false)
+
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <a href="@Url.Action("Index","Manage")" class="logo logo-small">
+                   
+                    <img src="~/Areas/Asset/vascra.png" 
+                    alt="Logo"
+                    width="30"
+                    height="30" />
+                </a>
+            </div>
+            <a href="javascript:void(0);" id="toggle_btn">
+                <i class="fas fa-align-left"></i>
+            </a>
+            <a class="mobile_btn" id="mobile_btn" href="javascript:void(0);">
+                <i class="fas fa-align-left"></i>
+            </a>
+
+            <ul class="nav user-menu">
+                <!-- User Menu -->
+                <li class="nav-item dropdown">
+                    <a href="javascript:void(0)"
+                       class="dropdown-toggle user-link nav-link"
+                       data-toggle="dropdown">
+                        <span class="user-img">
+                            <img class="rounded-circle"
+                                 src="~/Areas/Asset/img/user.jpg"
+                                 width="40"
+                                 alt="Admin" />
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="@Url.Action("Logout","Auth")">Đăng xuất</a>
+                    </div>
+                </li>
+                <!-- /User Menu -->
+            </ul>
+        </div>
+        <!-- /Header -->
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <a href="@Url.Action("Index","Manage")">
+                    <img src="~/Areas/Asset/vascra.png" 
+                         class="img-fluid"
+                         alt="" />
+                </a>
+            </div>
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="@(HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString()=="Manage" ? "active":"")">
+                            <a href="@Url.Action("Index","Manage")"><i class="fas fa-columns"></i> <span>Thống kê</span></a>
+                        </li>
+                        <li class="@(HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString()=="ManageCategory" ? "active":"")">
+                            <a href="@Url.Action("Index","ManageCategory")">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Quản lý danh mục</span>
+                            </a>
+                        </li>
+                        <li class="@(HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString()=="ManageProduct" ? "active":"")">
+                            <a href="@Url.Action("Index","ManageProduct")">
+                                <i class="fab fa-buffer"></i>
+                                <span>Quản lý sản phẩm</span>
+                            </a>
+                        </li>
+                        <li class="@(HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString()=="ManageOrder" ? "active":"")">
+                            <a href="@Url.Action("Index","ManageOrder")">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Quản lý đơn hàng</span>
+                            </a>
+                        </li>
+                        <li class="@(HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString()=="ManageAccount" ? "active":"")">
+                            <a href="@Url.Action("Index","ManageAccount")">
+                                <i class="fas fa-user"></i>
+                                <span>Quản lý tài khoản </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /Sidebar -->
+
+        <div class="page-wrapper">
+            @RenderBody()
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="~/Areas/Asset/js/jquery-3.5.0.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="~/Areas/Asset/js/popper.min.js"></script>
+    <script src="~/Areas/Asset/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Datepicker Core JS -->
+    <script src="~/Areas/Asset/js/moment.min.js"></script>
+    <script src="~/Areas/Asset/js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- Datatables JS -->
+    <script src="~/Areas/Asset/plugins/datatables/datatable.min.js"></script>
+
+    <!-- Slimscroll JS -->
+    <script src="~/Areas/Asset/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="~/Areas/Asset/js/bootstrapValidator.min.html"></script>
+
+    <!-- Select2 JS -->
+    <script src="~/Areas/Asset/js/select2.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="~/Areas/Asset/js/admin.js"></script>
+    <script src="~/Areas/Asset/js/toastr.js"></script>
+
+
+    @RenderSection("scripts", required: false)
+
+</body>
+
+<!-- Mirrored from truelysell-admin.dreamguystech.com/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Jun 2021 14:22:07 GMT -->
+</html>
+

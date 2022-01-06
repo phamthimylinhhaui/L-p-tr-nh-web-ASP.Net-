@@ -1,0 +1,23 @@
+﻿
+@model ShopGiayOnline.Models.Category
+    
+
+<div class="breadcrumb-area breadcrumb-height" data-bg-image="https://theme.hstatic.net/1000317997/1000499273/14/ms_banner_img1.jpg?v=198">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-lg-12">
+                <div class="breadcrumb-item">
+                    <div class="main-breadcrum">
+                        <h2 class="breadcrumb-heading">@Model.category_name</h2>
+                        <ul style="text-align:center">
+                            <li>
+                                <a href="@Url.Action("Index","Home")">Trang chủ <i class="pe-7s-angle-right"></i></a>
+                            </li>
+                            <li> @Model.category_name</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

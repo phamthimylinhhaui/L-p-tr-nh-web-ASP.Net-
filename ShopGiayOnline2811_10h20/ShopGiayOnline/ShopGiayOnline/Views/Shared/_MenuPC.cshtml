@@ -1,0 +1,94 @@
+﻿
+@model IEnumerable<ShopGiayOnline.Models.Category>
+
+<div class="main-header " style="border-top: 1px solid #f15c68; border-bottom: 1px solid #f15c68;">
+    <div class="container">
+        <div class="main-header_nav position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-12 d-none d-lg-block">
+                    <div class="main-menu">
+                        <nav class="main-nav">
+                            <ul style="justify-content:left">
+                                <li class="drop-holder">
+                                    <a href="@Url.Action("Index","Home")">
+                                        <i class="pe-7s-home" style="font-size:20px"></i>
+
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="#">Giới thiệu</a>
+                                </li>
+                                
+                                @foreach (var item in Model)
+                                {
+
+                                    <li><a href="@Url.Action("Detail","Category", new { id = item.category_id })">@item.category_name</a></li>
+
+                                }
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End menu pc -->
+<!-- Start menu mobile -->
+
+<style>
+    .header-right {
+        min-width: 0px;
+    }
+
+        .header-right > ul {
+            justify-content: space-between;
+        }
+
+    ul.dropdown-wrap.justify-content-center.text-silver {
+        background: #2b2828;
+        padding: 20px;
+    }
+
+    .dropdown-wrap li .ht-btn:after {
+        display: none;
+    }
+
+    .offcanvas-search_wrapper .harmic-offcanvas-body .offcanvas-search {
+        justify-content: flex-start;
+    }
+
+    .main-header.header-sticky.sticky {
+        top: 94px;
+    }
+</style>
+
+
+
+<div class="offcanvas-search_wrapper" id="searchBar">
+    <div class="harmic-offcanvas-body">
+        <div class="container h-100">
+            <div class="offcanvas-search">
+                <div class="harmic-offcanvas-top">
+                    <a href="#" class="button-close"><i class="pe-7s-close"></i></a>
+                </div>
+                <span class="searchbox-info">Nhập từ bạn muốn tìm và nhấn Enter</span>
+
+                <div class="hm-searchbox">
+                    <input type="text" placeholder="Tìm kiếm.....">
+                    <button class="search-btn" type="submit" onclick="onSearch()">
+                        <i class="pe-7s-search"></i>
+                    </button>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
